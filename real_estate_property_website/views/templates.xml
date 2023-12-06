@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+        <template id="listing">
+          <t t-call="website.layout">
+            <t t-set="title">Properties</t>
+              <div class="oe_structure"/>
+              <div class="oe_structure">
+                <div class="container">
+                <div class="row mt-5">
+                  <div class="col-12">
+                      <h1 class="text-center" style="font-size: 2.5em;">Properties</h1>
+                  </div>
+                </div>
+                <p>
+                  <ul>
+                    <li t-foreach="properties" t-as="object">
+                      <a t-attf-href="#{ root }/properties/#{ object.id }">
+                        <t t-esc="object.display_name"/>
+                      </a>
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="oe_structure"/>
+          </t>
+        </template>
+
+        <template id="property" name="Property Detail">
+          <t t-call="website.layout">
+              <div id="wrap" class="oe_structure oe_empty">
+                  <div class="container">
+                      <!-- Property Header -->
+                      <div class="row mt-5">
+                          <div class="col-12">
+                              <h1 t-field="property.name" class="text-center" style="font-size: 2.5em;"/>
+                          </div>
+                      </div>
+
+                      <!-- Property Image -->
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <span t-field="property.property_image" t-options='{"widget": "image", "class": "img-fluid"}'/>
+                        </div>
+                      </div>
+
+                      <!-- Property Details -->
+                      <div class="row mt-4">
+                          <div class="col-md-6">
+                              <h3>Property Details</h3>
+                              <p t-field="property.description"/>
+                              <ul class="list-unstyled">
+                                  <li><strong>Address:</strong> <span t-field="property.street"/></li>
+                                  <!-- Add more property details here -->
+                              </ul>
+                          </div>
+                          <div class="col-md-6">
+                              <!-- Add more sections or information here -->
+                          </div>
+                      </div>
+
+                      <!-- Additional Information -->
+                      <div class="row mt-4">
+                          <div class="col-12">
+                              <h3>Additional Information</h3>
+                              <p>Here you can add more information about the property, like amenities, neighborhood, etc.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </t>
+      </template>
+    </data>
+</odoo>

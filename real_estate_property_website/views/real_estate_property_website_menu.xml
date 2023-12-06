@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <!-- Création de l'action de menu du site web -->
+        <record id="real_estate_property_website.action_real_estate_properties" model="ir.actions.act_url">
+            <field name="name">Properties</field>
+            <field name="url">/real-estate/properties</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Ajout du menu dans le site web -->
+        <record id="real_estate_property_website.website_real_estate_menu" model="website.menu">
+            <field name="name">Properties</field>
+            <field name="url">/real-estate/properties</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">30</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,439 @@
+<odoo>
+  <data>
+
+<!-- LIST VIEWS -->
+<!-- Property list view -->
+    <record model="ir.ui.view" id="real_estate_property_view_list">
+      <field name="name">real_estate.property_view_list</field>
+      <field name="model">real_estate.property</field>
+      <field name="arch" type="xml">
+        <tree multi_edit="1">
+          <field name="name"/>
+          <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+          <field name="activity_ids" widget="list_activity" optional="show" readonly="1"/>
+          <field name="owner_mobile" widget="phone" optional="show"/>
+          <field name="owner_email" widget="email" optional="show"/>
+          <field name="price" sum="Selling properties's total value" widget="monetary" optional="show"/>
+          <field name="company_id" column_invisible="1"/>
+          <field name="company_currency_id" column_invisible="1"/>
+        </tree>
+      </field>
+    </record>
+<!-- Category List view -->
+    <record model="ir.ui.view" id="real_estate_type_view_list">
+      <field name="name">real_estate.type_view_list</field>
+      <field name="model">real_estate.type</field>
+      <field name="arch" type="xml">
+        <tree editable="top">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+<!-- extra information List view -->
+    <record model="ir.ui.view" id="real_estate_extra_tag_view_list">
+      <field name="name">real_estate.extra.tag_view_list</field>
+      <field name="model">real_estate.extra.tag</field>
+      <field name="arch" type="xml">
+        <tree editable="top">
+          <field name="name"/>
+          <field name="color" widget="color_picker"/>
+        </tree>
+      </field>
+    </record>
+<!-- SubCategory List view -->
+    <record model="ir.ui.view" id="real_estate_subtype_view_list">
+      <field name="name">real_estate.subtype_view_list</field>
+      <field name="model">real_estate.subtype</field>
+      <field name="arch" type="xml">
+        <tree editable="top">
+          <field name="name"/>
+          <field name="type_id"/>
+        </tree>
+      </field>
+    </record>
+
+
+<!-- SEARCH VIEWS -->
+<!-- Property search view -->
+<record model="ir.ui.view" id="real_estate_property_view_search">
+  <field name="name">real_estate.property_view_search</field>
+  <field name="model">real_estate.property</field>
+  <field name="arch" type="xml">
+    <search string="Search Properties">
+      <field name="name"/>
+      <field name="user_id"/>
+      <group expand="0" string="Group By">
+        <filter name="type_id" string="Type" context="{'group_by': 'type_id'}"/>
+        <filter name="building_condition" string="Building condition" context="{'group_by': 'building_condition'}"/>
+        <filter name="user_id" string="Representative" context="{'group_by': 'user_id'}"/>
+      </group>
+    </search>
+  </field>
+</record>
+<!-- subcategory search view -->
+<record model="ir.ui.view" id="real_estate_subtype_view_search">
+  <field name="name">real_estate.subtype_view_search</field>
+  <field name="model">real_estate.subtype</field>
+  <field name="arch" type="xml">
+    <search string="Search Subtype">
+      <field name="name"/>
+      <field name="type_id"/>
+      <group expand="0" string="Group By">
+        <filter name="type_id" string="Type" context="{'group_by': 'type_id'}"/>
+      </group>
+    </search>
+  </field>
+</record>
+
+<!-- real estate property stage list view -->
+    <record model="ir.ui.view" id="real_estate_property.stage_view_list">
+        <field name="name">real_estate.stage_view_list</field>
+        <field name="model">real_estate.stage</field>
+        <field name="arch" type="xml">
+            <tree string="Stages">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="fold"/>
+            </tree>
+        </field>
+    </record>
+
+<!-- FORM VIEWS -->
+<!-- Property form view -->
+<record model="ir.ui.view" id="real_estate_property_view_form">
+    <field name="name">real_estate.property_view_form</field>
+    <field name="model">real_estate.property</field>
+    <field name="arch" type="xml">
+        <form string="">
+            <header>
+            <field name="stage_id" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+            </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_documents" type="object" class="oe_stat_button" icon="fa-folder-open-o">
+                            <field name="document_count" string="Documents" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <div class="oe_title mw-100 pe-0">
+                        <h1 class="d-flex justify-content-between align-items-top">
+                            <field name="name" class="mw-75" placeholder="Property name"/>
+                            <field name="property_image" widget="image" class="oe_avatar ms-5" />
+                        </h1>
+                    </div>
+                    <notebook>
+                        <!-- TAB General  -->
+                        <page string="General Information" name="general_information" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="partner_id" placeholder="Select or create the Owner"/>
+                                    <field name="owner_mobile" string="Owner mobile" widget="phone"/>
+                                    <field name="owner_email" string="Owner email" widget="email"/>
+                                    <field name="user_id" widget="many2one_avatar_user" domain="[('share', '=', False), ('active', '=', True)]"/>
+                                </group>
+                                <group>
+                                    <label for="type_id" string="Type" />
+                                    <div class="o_real_estate_property_type">
+                                        <field name="type_id" class="oe_inline o_input_11ch" placeholder="e.g. House" options='{"no_open": True, "no_create": True}'/>
+                                        <span> - </span>
+                                        <field name="subtype_id" class="oe_inline o_input_16ch ps-2" placeholder="Subtype" domain="[('type_id', '=', type_id)]" options='{"no_open": True, "no_create": True}' />
+                                    </div>
+                                    <label for="street" string="Address"/>
+                                    <div class="o_address_format">
+                                        <field name="street" placeholder="Street..." class="o_address_street"/>
+                                        <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                        <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                        <field name="city" placeholder="City" class="o_address_city"/>
+                                        <field name="country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                    </div>
+                                </group>
+                            </group>
+                            <group string="Notes">
+                                <field name="description" nolabel="1" colspan="2" placeholder="Internal notes..."/>
+                            </group>
+                        </page>
+                        <!-- TAB Finance -->
+                        <page string="Finance" name="finance">
+                            <group>
+                                <group name="left details" string="Transaction Details">
+                                    <field name="company_id" invisible="1" />
+                                    <field name="company_currency_id" invisible="1" />
+                                    <label for="transaction_type" string="Transaction" />
+                                    <div class="o_real_estate_property_pricing">
+                                        <field name="transaction_type" class="oe_inline" />
+                                        <span> at </span> <field name="price" class="oe_inline ps-2" widget="monetary" options="{'currency_field': 'company_currency_id'}" />
+                                        <label for="make_offer" />
+                                        <field name="make_offer" class="oe_inline ps-2"/>
+                                    </div>
+                                    <label for="availabilty" />   
+                                    <div>
+                                        <field name="availabilty" class="oe_inline" />
+                                        <field name="available_from" class="oe_inline ps-2" placeholder="Select a date" />
+                                    </div>
+                                </group>
+                                <group name="right details" string="Financial Expectations">
+                                    <field name="expected_revenue" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <!-- TAB Main features -->
+                        <!-- TAB Main features -->
+                        <page string="Main Features" name="main_features">
+                            <group>
+                                <group string="Building Details">
+                                    <field name="construction_year" placeholder="Not Specified" />
+                                    <field name="building_condition" />
+                                    <field name="building_footprint" class="o_input_6ch" placeholder="0" />
+                                    <field name="livable_area" class="o_input_6ch" placeholder="0" />
+                                    <field name="floor_number" class="o_input_6ch" placeholder="0" />
+                                </group>
+
+                                <group string="Exterior and Land">
+                                    <field name="frontages_number" />
+                                    <field name="rear_facade_orientation" />
+                                    <field name="frontage_width" class="o_input_6ch" placeholder="0" />
+                                    <field name="land_area" class="o_input_6ch" placeholder="0" />
+                                    <field name="land_width" class="o_input_6ch" placeholder="0" />
+                                    
+                                </group>
+
+                                <group string="Rooms">
+                                    <field name="bedroom" class="o_input_3ch" placeholder="0" />
+                                    <field name="bathroom" class="o_input_3ch" placeholder="0" />
+                                    <field name="office" class="o_input_3ch" placeholder="0" />
+                                    <field name="toilet" class="o_input_3ch" placeholder="0" />
+                                </group>
+
+                                <group string="Outdoor Spaces">
+                                    <field name="garden" widget="radio" options="{'horizontal':'true'}" />
+                                    <field name="garden_orientation" invisible="garden not in ['1']" />
+                                    <field name="terrace" widget="radio" options="{'horizontal':'true'}" />
+                                    <field name="terrace_area" placeholder="e.g. 8" invisible="terrace not in ['1']"/>
+                                    <field name="terrace_orientation" invisible="terrace not in ['1']" />
+                                </group>
+
+                                
+
+                                <group string="Additional Spaces">
+                                    <field name="basement" widget="radio" options="{'horizontal':'true'}" />
+                                    <field name="attic" widget="radio" options="{'horizontal':'true'}" />
+                                    <field name="attic_type" invisible="attic not in ['1']" />
+                                    <field name="professional_practice" widget="radio" options="{'horizontal':'true'}" />
+                                </group>
+
+                                <group string="Parking">
+                                    <field name="garage" class="o_input_3ch" placeholder="0" />
+                                    <field name="carport" class="o_input_3ch" placeholder="0" />
+                                    <field name="indoor_parking" class="o_input_3ch" placeholder="0" />
+                                    <field name="outdoor_parking" class="o_input_3ch" placeholder="0" />
+                                </group>
+                            </group>
+                        </page>
+
+                        <!-- TAB Urban planning -->
+                        <page string="Urban Planning" name="urban_planning">
+                            <field name="urban_planning" options="{'codeview': true}"/>
+                        </page>
+                        <!-- TAB Visits &amp; Participants -->
+                        <page string="Visits &amp; Participants" name="visits_participants">
+                            <field name="visits"/>
+                            <field name="participants"/>
+                        </page>
+                        <!-- TAB Composition &amp; Materials -->
+                        <page string="Composition" name="composition">
+                            <field name="composition_ids" widget="one2many_list" mode="tree" editable="bottom">
+                                <tree editable="bottom">
+                                    <field name="floor_level" string="Level"/>
+                                    <field name="name"/>
+                                    <field name="room_condition" string="Condition"/>
+                                    <field name="floor_type" placeholder="Not Specified"/>
+                                    <field name="comment" optional="hide" />
+                                    <field name="room_area" string="Area" sum="Total Area"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            <div class="oe_chatter">
+                <field name="message_follower_ids"/>
+                <field name="activity_ids"/>
+                <field name="message_ids"/>
+            </div>
+        </form>
+    </field>
+</record>
+
+<!-- real estate property stage form -->
+<record model="ir.ui.view" id="real_estate_property_stage_view_form">
+    <field name="name">real_estate.stage_view_form</field>
+    <field name="model">real_estate.stage</field>
+    <field name="arch" type="xml">
+        <form string="Stage">
+        <sheet>
+            <group name="stage_definition" string="Stage Definition">
+                <group>
+                    <field name="name"/>
+                    <field name="sequence" groups="base.group_no_one"/>
+                </group>
+                <group name="stage_details">
+                    <field name="fold"/>
+                </group>
+            </group>
+            <group name="tooltips" string="Tooltips">
+                <label for="legend_normal" string=" " class="o_status"/>
+                <field name="legend_normal" nolabel="1"/>
+                <label for="legend_blocked" string=" " class="o_status o_status_red"/>
+                <field name="legend_blocked" nolabel="1"/>
+                <label for="legend_done" string=" " class="o_status o_status_green"/>
+                <field name="legend_done" nolabel="1"/>
+            </group>
+        </sheet>
+        </form>
+    </field>
+</record>
+
+
+<!-- ACTIVITY VIEWS -->
+
+<record model="ir.ui.view" id="Real_estate_property_view_activity">
+            <field name="name">Real_estate.property_view_activity</field>
+            <field name="model">real_estate.property</field>
+            <field name="arch" type="xml">
+                <activity string="Property">
+                    <field name="company_currency_id"/>
+                    <templates>
+                        <div t-name="activity-box" class="d-block">
+                            <div class="d-flex justify-content-between">
+                                <field name="name" class="o_text_block o_text_bold"/>
+                                <div class="m-1"/>
+                                <field name="expected_revenue" widget="monetary"/>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <field name="partner_id" string="Owner" class="o_text_block"/>
+                                <div class="m-1"/>
+                            </div>
+                        </div>
+                    </templates>
+                </activity>
+            </field>
+        </record>
+
+
+<!-- KANBAN VIEWS -->
+<!-- real estate property kanban view -->
+<record model="ir.ui.view" id="real_estate_property_view_kanban">
+    <field name="name">real_estate.property_view_kanban</field>
+    <field name="model">real_estate.property</field>
+    <field name="arch" type="xml">
+        <kanban default_group_by="stage_id">
+            <field name="id"/>
+            <field name="stage_id"/>
+            <field name="user_id"/>
+            <field name="partner_id"/>
+            <field name="activity_ids" />
+            <field name="activity_state" />
+            <field name="company_id" />
+            <field name="company_currency_id" />
+            <progressbar field="kanban_state" sum_field="expected_revenue" colors='{"done": "success", "blocked": "danger"}'/>
+            <templates>
+                <t t-name="kanban-box">
+                    <div t-attf-class="{{record.id.raw_value ? 'oe_kanban_card oe_kanban_global_click' : ''}}">
+                        <field name="company_id" invisible="1"/>
+                        <div class="oe_kanban_content">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <i class="o_kanban_record_title"><field name="name"/></i><br/>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_subtitle">
+                                <t t-if="record.expected_revenue.raw_value">
+                                    <field name="expected_revenue" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                                </t>
+                            </div>
+                            <div class="o_kanban_record_bottom mt4">
+                                <div class="oe_kanban_bottom_left">
+                                    <div class="o_kanban_inline_block mr8">
+                                        <field name="activity_ids" widget="kanban_activity"/>
+                                    </div>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <field name="user_id" widget="many2one_avatar_user"/>
+                                    <div class="o_kanban_state_with_padding ms-1 me-2">
+                                        <field name="kanban_state" widget="state_selection"/>
+                                        <field name="legend_normal" invisible="1"/>
+                                        <field name="legend_blocked" invisible="1"/>
+                                        <field name="legend_done" invisible="1"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record>
+
+<!-- ACTIONS -->
+<record model="ir.actions.act_window" id="real_estate_property.action_properties">
+    <field name="name">Properties</field>
+    <field name="res_model">real_estate.property</field>
+    <field name="view_mode">kanban,tree,form,activity</field>
+    <field name="help" type="html">
+    <p class="o_view_nocontent_smiling_face">
+        Add your first property now to Launch your real estate adventure !
+    </p>
+    </field>
+</record>
+
+<record model="ir.actions.act_window" id="real_estate_property.action_categories">
+    <field name="name">types</field>
+    <field name="res_model">real_estate.type</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record model="ir.actions.act_window" id="real_estate_property.action_subcategories">
+    <field name="name">Subtypes</field>
+    <field name="res_model">real_estate.subtype</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record model="ir.actions.act_window" id="real_estate_property.action_tags">
+    <field name="name">Extra information</field>
+    <field name="res_model">real_estate.extra.tag</field>
+    <field name="view_mode">tree</field>
+</record>
+
+<record model="ir.actions.act_window" id="real_estate_property.action_stage">
+    <field name="name">Real Estate Stages</field>
+    <field name="res_model">real_estate.stage</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+    <p class="o_view_nocontent_smiling_face">
+        Add a new stage into the real estate sales process.
+    </p>
+    </field>
+</record>
+
+<record id="property_config_settings_action" model="ir.actions.act_window">
+    <field name="name">Settings</field>
+    <field name="res_model">res.config.settings</field>
+    <field name="view_mode">form</field>
+    <field name="target">inline</field>
+    <field name="context">{'module' : 'real_estate_property', 'bin_size': False}</field>
+</record>
+
+<!-- MENUS -->
+<menuitem id="real_estate_property.menu_root" web_icon="real_estate_property,static/description/icon.png" sequence="10" name="Properties">
+    <menuitem id="real_estate_property.menu_1" action="real_estate_property.action_properties"/>
+    <menuitem id="real_estate_property.menu_config" name="Configuration">
+        <menuitem id="property_menu_configuration" name="Settings" action="property_config_settings_action" sequence="0"/>
+        <menuitem id="real_estate_property.menu_config_cat" name="Types" action="real_estate_property.action_categories" sequence="10"/>
+        <menuitem id="real_estate_property.menu_config_subcat" name="Subtypes" action="real_estate_property.action_subcategories" sequence="11"/>
+        <menuitem id="real_estate_property.menu_config_extra_tags" name="Extra Information" action="real_estate_property.action_tags" sequence="12"/>
+        <menuitem id="real_estate_property.menu_stage" name="Stages" action="real_estate_property.action_stage" sequence="13"/>
+    </menuitem>
+</menuitem>
+
+</data>
+</odoo>

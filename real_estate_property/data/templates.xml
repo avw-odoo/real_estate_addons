@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="urban_template">
+            <b>Zoning Assignment</b>
+            <p></p><p><br/></p>
+            <b>Servitude</b>
+            <p></p><p><br/></p>
+            <b>Preemption Right</b>
+            <p></p><p><br/></p>
+            <b>Ongoing Judgment</b>
+            <p></p><p><br/></p>
+            <b>Building Permit</b>
+            <p></p><p><br/></p>
+            <b>Land Subdivision Permit</b>
+            <p></p><p><br/></p>
+            <b>Urban Infraction(s)</b>
+            <p></p><p><br/></p>
+    </template>
+</odoo>

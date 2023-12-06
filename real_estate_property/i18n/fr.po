@@ -1,0 +1,1287 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* real_estate_property
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 13:58+0000\n"
+"PO-Revision-Date: 2023-11-21 18:14+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_5
+msgid "Accessible for disabled people"
+msgstr "Accessible aux personnes handicapées"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_state
+msgid "Activity State"
+msgstr "État de l’activité"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône de type d’activité"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__4
+msgid "After signing the deed"
+msgstr "Après la signature de l’acte"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_agricultural_area
+msgid "Agricultural area"
+msgstr "Zone agricole"
+
+#. module: real_estate_property
+#: model:real_estate.category,name:real_estate_property.category_apartment
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_apartment
+msgid "Apartment"
+msgstr "Appartement"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_apartment_block
+msgid "Apartment Block"
+msgstr "Immeuble à appartements"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__2
+msgid "As new"
+msgstr "Comme neuf"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__6
+msgid "At delivery"
+msgstr "À la livraison"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__attic
+msgid "Attic"
+msgstr "Grenier"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__3
+msgid "Attic suitable for conversion"
+msgstr "Grenier aménageable"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__attic_type
+msgid "Attic type"
+msgstr "Type de grenier"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__availabilty
+msgid "Availability"
+msgstr "Disponibilité"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__available_from
+msgid "Available From"
+msgstr "Disponible à partir de"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__2
+msgid "Available as of"
+msgstr "À la livraison"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__basement
+msgid "Basement"
+msgstr "Cave"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bathroom
+msgid "Bathroom"
+msgstr "Salle de bain"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_bedandbreakfast
+msgid "Bed & breakfast"
+msgstr "Chambre d'hôtes"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bedroom
+msgid "Bedroom"
+msgstr "Chambre à coucher"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_boat_cruise
+msgid "Boat cruise"
+msgstr "Croisière en bateau"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_building
+msgid "Building"
+msgstr "Immeuble"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__building_condition
+msgid "Building Condition"
+msgstr "État du bâtiment"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+msgid "Building condition"
+msgstr "État du bâtiment"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_building_land
+msgid "Building land"
+msgstr "Terrain à bâtir"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_bungalow
+msgid "Bungalow"
+msgstr "Pavillon"
+
+#. module: real_estate_property
+#: model:real_estate.category,name:real_estate_property.category_business
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_business
+msgid "Business"
+msgstr "Commerce"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__cadastre_number
+msgid "Cadastre number"
+msgstr "Numéro du cadastre"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__cadastre_section
+msgid "Cadastre section"
+msgstr "Section du cadastre"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_campsite
+msgid "Campsite"
+msgstr "Camping"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_8
+msgid "Caretaker or concierge"
+msgstr "Gardien ou concierge"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__carport
+msgid "Carport"
+msgstr "Carport"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_castle
+msgid "Castle"
+msgstr "Chateau"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_categories
+msgid "Categories"
+msgstr "Types"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__category_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
+msgid "Category"
+msgstr "Type"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_catering_industry
+msgid "Catering industry"
+msgstr "Horeca"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_chalet
+msgid "Chalet"
+msgstr "Chalet"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__city
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "City"
+msgstr "Ville"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_closed_garage
+msgid "Closed garage"
+msgstr "Garage fermé"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_closed_parking
+msgid "Closed parking"
+msgstr "Parking fermé"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_commercial_premises
+msgid "Commercial premises"
+msgstr "Locaux industriels"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_commercial_villa
+msgid "Commercial villa"
+msgstr "Villa commerciale"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__company_id
+msgid "Company"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__company_currency_id
+msgid "Company Currency"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__composition
+msgid "Composition"
+msgstr "Composition"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Composition & Materials"
+msgstr "Composition et matériaux"
+
+#. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_config
+msgid "Configuration"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__construction_year
+msgid "Construction Year"
+msgstr "Année de construction"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Contacts"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_cottage
+msgid "Cottage"
+msgstr "Gîtes"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__country_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Country"
+msgstr "Pays"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__country_code
+msgid "Country Code"
+msgstr "Code pays"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_country_cottage
+msgid "Country Cottage"
+msgstr "Maison de campagne"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_covered_parking_space
+msgid "Covered parking space"
+msgstr "Place de parking couverte"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__7
+msgid "Depending on the tenant"
+msgstr "Selon le locataire"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_duplex
+msgid "Duplex"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__3
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__3
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__3
+msgid "East"
+msgstr "Est"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_4
+msgid "Elevator"
+msgstr "Ascenseur"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__owner_email
+msgid "Email"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_exceptional_property
+msgid "Exceptional property"
+msgstr "Bien exceptionnel"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_tags
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__property_extra_ids
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__name
+#: model:ir.ui.menu,name:real_estate_property.menu_config_extra_tags
+msgid "Extra information"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_farmhouse
+msgid "Farmhouse"
+msgstr "Ferme"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_fields
+msgid "Fields"
+msgstr "Champs"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Finance"
+msgstr "Finance"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__1
+msgid "Finished attic"
+msgstr "Grenier aménagé"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_6
+msgid "First occupation"
+msgstr "Première occupation"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_forest
+msgid "Forest"
+msgstr "Forêt"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__frontage_width
+msgid "Frontage width"
+msgstr "Largeur de la façade"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_7
+msgid "Furnished"
+msgstr "Meublé"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garage
+#: model:real_estate.category,name:real_estate_property.category_garage
+msgid "Garage"
+msgstr "Garage"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garden
+msgid "Garden"
+msgstr "Jardin"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garden_orientation
+msgid "Garden orientation"
+msgstr "Orientation jardin"
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_1
+msgid "Gaz"
+msgstr "Gaz"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "General information"
+msgstr "Information général"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__1
+msgid "Good"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_ground_floor
+msgid "Ground floor"
+msgstr "Rez de chaussée"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
+msgid "Group By"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_holiday_park
+msgid "Holiday park"
+msgstr "Parc de vacances"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_hotel
+msgid "Hotel"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.category,name:real_estate_property.category_house
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_house
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "House"
+msgstr "Maison"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_house_boat
+msgid "House boat"
+msgstr "Bateau-logement"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__id
+msgid "ID"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__3
+msgid "Immediately"
+msgstr "Immédiatement"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__indoor_parking
+msgid "Indoor parking"
+msgstr "Parking intérieur"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_industrial_premises
+msgid "Industrial premises"
+msgstr "Locaux industriels"
+
+#. module: real_estate_property
+#: model:real_estate.category,name:real_estate_property.category_industry
+msgid "Industry"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__description
+msgid "Internal notes"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Internal notes..."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__4
+msgid "Just renovated"
+msgstr "Remis à neuf"
+
+#. module: real_estate_property
+#: model:real_estate.category,name:real_estate_property.category_land
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_land
+msgid "Land"
+msgstr "Terrain"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__land_area
+msgid "Land Area"
+msgstr "Surface terrain"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__land_width
+msgid "Land width"
+msgstr "Largeur terrain"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_large_town_house
+msgid "Large town house"
+msgstr "Grande maison de ville"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__livable_area
+msgid "Livable Area"
+msgstr "Surface habitable"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_loft
+msgid "Loft"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Main Features"
+msgstr "Caractéristiques principales"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_manor_house
+msgid "Manor house"
+msgstr "Manoir"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_mansion
+msgid "Mansion"
+msgstr "Maison de maître"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__materials
+msgid "Materials"
+msgstr "Matériaux"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_meadow
+msgid "Meadow"
+msgstr "Champ"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_mill
+msgid "Mill"
+msgstr "Moulin"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_mixed_use_building
+msgid "Mixed use building"
+msgstr "Bâtiment à usage mixte"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_mixed_use_building_commercial
+msgid "Mixed use building commercial"
+msgstr "Bâtiment à usage mixte commercial"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_mixed_use_building
+msgid "Mixed-use building"
+msgstr "Bâtiment à usage mixte"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_mixed_use_building_offices
+msgid "Mixed-use building offices"
+msgstr "Bâtiment à usage mixte commercial"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__owner_mobile
+msgid "Mobile"
+msgstr "GSM proprio"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_mobile_home
+msgid "Mobile home"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__basement__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__professional_practice__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace__2
+msgid "No"
+msgstr "Non"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_non_building_land
+msgid "Non-building land"
+msgstr "Terrain non constructible"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__1
+msgid "North"
+msgstr "Nord"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__5
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__5
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__5
+msgid "Northeast"
+msgstr "Nord-Est"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__6
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__6
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__6
+msgid "Northwest"
+msgstr "Nord-Ouest"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Notes"
+msgstr "Notes internes"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__floor_number
+msgid "Number of Floors"
+msgstr "Nombre d'étages"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__frontages_number
+msgid "Number of Frontages"
+msgstr "Nombre de façades"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__make_offer
+msgid "Offers starting at"
+msgstr "Faire Offre"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__office
+#: model:real_estate.category,name:real_estate_property.category_office
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_office
+msgid "Office"
+msgstr "Bureau"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_block
+msgid "Office block"
+msgstr "Immeuble de bureaux"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_orchard
+msgid "Orchard"
+msgstr "Verger"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__transaction_type__3
+#: model:real_estate.category,name:real_estate_property.category_other
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_other
+msgid "Other"
+msgstr "Autres"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_other_house
+msgid "Other house"
+msgstr "Autres maisons"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_other_property
+msgid "Other property"
+msgstr "Autres biens"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__outdoor_parking
+msgid "Outdoor parking"
+msgstr "Parking extérieur"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_outdoor_parking_space
+msgid "Outdoor parking space"
+msgstr "Place de parking extérieure"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__partner_id
+msgid "Owner"
+msgstr "Proprio"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Owner email"
+msgstr "Email proprio"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Owner mobile"
+msgstr "GSM proprio"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__participants
+msgid "Participants"
+msgstr "Intervenants"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_pavillon
+msgid "Pavillon"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_penthouse
+msgid "Penthouse"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__professional_practice
+msgid "Professional practice"
+msgstr "Profession libérale"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_properties
+#: model:ir.ui.menu,name:real_estate_property.menu_1
+#: model:ir.ui.menu,name:real_estate_property.menu_root
+msgid "Properties"
+msgstr "Biens"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__property_image
+msgid "Property Image"
+msgstr "Image du bien"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__name
+msgid "Property Name"
+msgstr "Nom du bien"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__category_id
+msgid "Property Type"
+msgstr "Type de bien"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Property information"
+msgstr "Information du bien"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Property name"
+msgstr "Nom du bien"
+
+#. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_config_subcat
+msgid "Property subtypes"
+msgstr "Sous type de biens"
+
+#. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_config_cat
+msgid "Property types"
+msgstr "Type de biens"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_provincial_farmhouse
+msgid "Provincial farmhouse"
+msgstr "Ferme provinciale"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__rear_facade_orientation
+msgid "Rear facade orientation"
+msgstr "Orientation de la façade arrière"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_recreational_area
+msgid "Recreational area"
+msgstr "Zone de loisirs"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__renovation_year
+msgid "Renovation Year"
+msgstr "Année de rénovation"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__transaction_type__2
+msgid "Rent"
+msgstr "Louer"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__user_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+msgid "Representative"
+msgstr "Agent immobilier"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+msgid "Search Properties"
+msgstr "Recherche de biens"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
+msgid "Search Subcategories"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Select or create the Owner"
+msgstr "Sélectionner ou créer le propriétaire"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__transaction_type__1
+msgid "Sell"
+msgstr "Vendre"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__price
+msgid "Selling Price"
+msgstr "Prix"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.list_property
+msgid "Selling properties's total value"
+msgstr "Total des biens en vente"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_service_flat
+msgid "Service flat"
+msgstr "Appartement de service"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__2
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__2
+msgid "South"
+msgstr "Sud"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__7
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__7
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__7
+msgid "Southeast"
+msgstr "Sud-Est"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__8
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__8
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__8
+msgid "Southwest"
+msgstr "Sud-ouest"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__livable_area
+msgid ""
+"Space within a property suitable for regular living, including bedrooms, "
+"living rooms, and kitchens, but excluding areas like garages and unfinished "
+"basements."
+msgstr ""
+"Espace dans une propriété adapté à la vie quotidienne, incluant les "
+"chambres, les salons et les cuisines, mais excluant des zones telles que "
+"les garages et les sous-sols non aménagés."
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_static_caravan
+msgid "Static caravan"
+msgstr "Caravane résidentielle"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__street
+msgid "Street"
+msgstr "Rue"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Street 2..."
+msgstr "Rue 2..."
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Street..."
+msgstr "Rue..."
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__street2
+msgid "Street2"
+msgstr "Rue 2"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_studio
+msgid "Studio"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_subcategories
+msgid "Subcategories"
+msgstr "Sous types"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__name
+msgid "Subcategory"
+msgstr "Sous type"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__subcategory_id
+msgid "Subtype"
+msgstr "Sous type"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__subcategory_id
+msgid "Subtype to specify the selected estatetype in detail."
+msgstr ""
+"Sous-type pour préciser en détail le type de bien immobilier sélectionné."
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace
+msgid "Terrace"
+msgstr "Terrasse"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace_area
+msgid "Terrace Area"
+msgstr "Surface terrasse"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace_orientation
+msgid "Terrace orientation"
+msgstr "Orientation terrasse"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__building_footprint
+msgid ""
+"The area of a plot of land covered by a building, measured from its "
+"external walls."
+msgstr ""
+"La superficie d’un terrain couverte par un bâtiment, mesurée à partir de "
+"ses murs extérieurs."
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__transaction_type
+msgid "The specific type of sale or rental."
+msgstr "Le type spécifique de vente ou de location."
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__category_id
+msgid ""
+"The type of the property. Estate type should have matching estate subtype."
+msgstr ""
+"Le type de propriété. Le type de bien immobilier devrait avoir un sous-type "
+"correspondant."
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__5
+msgid "To be defined"
+msgstr "À définir"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__5
+msgid "To refurbish"
+msgstr "À rénover"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__6
+msgid "To renovate"
+msgstr "À rénover"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__3
+msgid "To restore"
+msgstr "À restaurer"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__toilet
+msgid "Toilet"
+msgstr "Toilette"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_town_house
+msgid "Town house"
+msgstr "Maison bel-étage"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_triplex
+msgid "Triplex"
+msgstr "Triplex"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__transaction_type
+msgid "Type of Transaction"
+msgstr "Type de transaction"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__7
+msgid "Undefined"
+msgstr "Non défini"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__2
+msgid "Unfinished attic"
+msgstr "Grenier non aménagé"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Urban Planning"
+msgstr "Urbanisme"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__urban_planning
+msgid "Urban planning"
+msgstr "Urbanisme"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_villa
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Villa"
+msgstr "Villa"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__visits
+msgid "Visits"
+msgstr "Visites"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "Visits & Participants"
+msgstr "Visites et inrtervenants"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_warehouse
+msgid "Warehouse"
+msgstr "Entrepôt"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__4
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__4
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__4
+msgid "West"
+msgstr "Ouest"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__basement__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__professional_practice__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace__1
+msgid "Yes"
+msgstr "Oui"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+msgid "ZIP"
+msgstr "Code Postale"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__zip
+msgid "Zip"
+msgstr "Code Postale"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__building_footprint
+msgid "building footprint"
+msgstr "surface bâtie"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__land_width
+msgid "distance across a piece of land at its widest point."
+msgstr "distance à travers un terrain à son point le plus large."
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_3
+msgid "electricity"
+msgstr "electricité"
+
+#. module: real_estate_property
+#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_kot
+msgid "kot"
+msgstr "kot"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_property_extra_tag
+msgid "real estate Extra information"
+msgstr "informations supplémentaires"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_category
+msgid "real estate category"
+msgstr "type du bien"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_property
+msgid "real estate property"
+msgstr "bien immobilier"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_subcategory
+msgid "real estate sub-category"
+msgstr "sous type de bien"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__land_area
+msgid ""
+"the total surface area of a piece of land, measured in square meters (m²) "
+"or acres."
+msgstr ""
+"la surface totale d’un terrain, mesurée en mètres carrés (m²) ou en ares."
+
+#. module: real_estate_property
+#: model:real_estate.property.extra.tag,name:real_estate_property.extra_2
+msgid "water"
+msgstr "eau"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="document_view_search_inherited" model="ir.ui.view">
+        <field name="name">documents.document.search.inherited</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.document_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <!-- Ajout du champ property_id dans la recherche -->
+                <field name="property_id" string="Related Property"/>
+                <!-- Vous pouvez également ajouter des filtres spécifiques pour ce champ si nécessaire -->
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_document_form_property" model="ir.ui.view">
+        <field name="name">documents.document.form.property</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.document_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='owner_id']" position="after">
+                <field name="property_id" context="{'create': False}" options="{'no_open': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="documents_view_list_inherited" model="ir.ui.view">
+        <field name="name">documents.document.list.inherited</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.documents_view_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='owner_id']" position="after">
+                <field name="property_id" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="document_view_kanban_inherited" model="ir.ui.view">
+        <field name="name">documents.document kanban.inherited</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.document_view_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_kanban_record_body')]" position="before">
+                <div t-if="record.property_id.raw_value" class="mb-3">
+                    <field name="property_id"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+

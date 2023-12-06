@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+    <!-- stages -->
+        <record id="stage1" model="real_estate.stage">
+            <field name="name">Prospecting</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage2" model="real_estate.stage">
+            <field name="name">File</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage3" model="real_estate.stage">
+            <field name="name">On Sale</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="stage4" model="real_estate.stage">
+            <field name="name">Under Offer</field>
+            <field name="sequence">4</field>
+        </record>
+        <record id="stage5" model="real_estate.stage">
+            <field name="name">Pre-Closing</field>
+            <field name="sequence">5</field>
+        </record>
+        <record id="stage6" model="real_estate.stage">
+            <field name="name">Archived</field>
+            <field name="sequence">5</field>
+            <field name="fold">1</field>
+        </record>
+    </data>
+</odoo>

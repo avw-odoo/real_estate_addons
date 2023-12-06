@@ -1,0 +1,305 @@
+<odoo>
+    <data>
+
+    <!-- Categories -->
+        <record id="category_house" model="real_estate.type">
+            <field name="name">House</field>
+        </record>
+        <record id="category_apartment" model="real_estate.type">
+            <field name="name">Apartment</field>
+        </record>
+        <record id="category_land" model="real_estate.type">
+            <field name="name">Land</field>
+        </record>
+        <record id="category_garage" model="real_estate.type">
+            <field name="name">Garage</field>
+        </record>
+        <record id="category_office" model="real_estate.type">
+            <field name="name">Office</field>
+        </record>
+        <record id="category_industry" model="real_estate.type">
+            <field name="name">Industry</field>
+        </record>
+        <record id="category_business" model="real_estate.type">
+            <field name="name">Business</field>
+        </record>
+         <record id="category_other" model="real_estate.type">
+            <field name="name">Other</field>
+        </record>
+
+
+        <!-- House Subcategories -->
+        <record id="subcategory_house_house" model="real_estate.subtype">
+            <field name="name">House</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_bungalow" model="real_estate.subtype">
+            <field name="name">Bungalow</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_chalet" model="real_estate.subtype">
+            <field name="name">Chalet</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_castle" model="real_estate.subtype">
+            <field name="name">Castle</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_farmhouse" model="real_estate.subtype">
+            <field name="name">Farmhouse</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_country_cottage" model="real_estate.subtype">
+            <field name="name">Country Cottage</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_exceptional_property" model="real_estate.subtype">
+            <field name="name">Exceptional property</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_apartment_block" model="real_estate.subtype">
+            <field name="name">Apartment Block</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_mixed_use_building" model="real_estate.subtype">
+            <field name="name">Mixed use building</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_town_house" model="real_estate.subtype">
+            <field name="name">Town house</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_mansion" model="real_estate.subtype">
+            <field name="name">Mansion</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_villa" model="real_estate.subtype">
+            <field name="name">Villa</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_other_property" model="real_estate.subtype">
+            <field name="name">Other property</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_manor_house" model="real_estate.subtype">
+            <field name="name">Manor house</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+        <record id="subcategory_house_pavillon" model="real_estate.subtype">
+            <field name="name">Pavillon</field>
+            <field name="type_id" ref="category_house"/>
+        </record>
+
+        <!-- Apartment Subcategories -->
+        <record id="subcategory_apartment_apartment" model="real_estate.subtype">
+            <field name="name">Apartment</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_ground_floor" model="real_estate.subtype">
+            <field name="name">Ground floor</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_duplex" model="real_estate.subtype">
+            <field name="name">Duplex</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_triplex" model="real_estate.subtype">
+            <field name="name">Triplex</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_studio" model="real_estate.subtype">
+            <field name="name">Studio</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_penthouse" model="real_estate.subtype">
+            <field name="name">Penthouse</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_loft" model="real_estate.subtype">
+            <field name="name">Loft</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_kot" model="real_estate.subtype">
+            <field name="name">kot</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+        <record id="subcategory_apartment_service_flat" model="real_estate.subtype">
+            <field name="name">Service flat</field>
+            <field name="type_id" ref="category_apartment"/>
+        </record>
+
+        <!-- Land Subcategories -->
+        <record id="subcategory_land_land" model="real_estate.subtype">
+            <field name="name">Land</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_building_land" model="real_estate.subtype">
+            <field name="name">Building land</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_recreational_area" model="real_estate.subtype">
+            <field name="name">Recreational area</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_forest" model="real_estate.subtype">
+            <field name="name">Forest</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_fields" model="real_estate.subtype">
+            <field name="name">Fields</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_meadow" model="real_estate.subtype">
+            <field name="name">Meadow</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_orchard" model="real_estate.subtype">
+            <field name="name">Orchard</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_non_building_land" model="real_estate.subtype">
+            <field name="name">Non-building land</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        <record id="subcategory_land_agricultural_area" model="real_estate.subtype">
+            <field name="name">Agricultural area</field>
+            <field name="type_id" ref="category_land"/>
+        </record>
+        
+        <!-- Garage Subcategories -->
+        <record id="subcategory_garage_outdoor_parking_space" model="real_estate.subtype">
+            <field name="name">Outdoor parking space</field>
+            <field name="type_id" ref="category_garage"/>
+        </record>
+        <record id="subcategory_garage_covered_parking_space" model="real_estate.subtype">
+            <field name="name">Covered parking space</field>
+            <field name="type_id" ref="category_garage"/>
+        </record>
+        <record id="subcategory_garage_closed_garage" model="real_estate.subtype">
+            <field name="name">Closed garage</field>
+            <field name="type_id" ref="category_garage"/>
+        </record>
+        <record id="subcategory_garage_closed_parking" model="real_estate.subtype">
+            <field name="name">Closed parking</field>
+            <field name="type_id" ref="category_garage"/>
+        </record>
+
+        <!-- Office Subcategories -->
+        <record id="subcategory_office_office" model="real_estate.subtype">
+            <field name="name">Office</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+        <record id="subcategory_office_building" model="real_estate.subtype">
+            <field name="name">Building</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+        <record id="subcategory_office_block" model="real_estate.subtype">
+            <field name="name">Office block</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+        <record id="subcategory_office_mixed_use_building_offices" model="real_estate.subtype">
+            <field name="name">Mixed-use building offices</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+        <record id="subcategory_office_large_town_house" model="real_estate.subtype">
+            <field name="name">Large town house</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+        <record id="subcategory_office_commercial_villa" model="real_estate.subtype">
+            <field name="name">Commercial villa</field>
+            <field name="type_id" ref="category_office"/>
+        </record>
+
+        <!-- Industry Subcategories -->
+        <record id="subcategory_industry_industrial_premises" model="real_estate.subtype">
+            <field name="name">Industrial premises</field>
+            <field name="type_id" ref="category_industry"/>
+        </record>
+        <record id="subcategory_industry_mixed_use_building" model="real_estate.subtype">
+            <field name="name">Mixed-use building</field>
+            <field name="type_id" ref="category_industry"/>
+        </record>
+        <record id="subcategory_industry_warehouse" model="real_estate.subtype">
+            <field name="name">Warehouse</field>
+            <field name="type_id" ref="category_industry"/>
+        </record>
+
+        <!-- Business Subcategories -->
+        <record id="subcategory_business_business" model="real_estate.subtype">
+            <field name="name">Business</field>
+            <field name="type_id" ref="category_business"/>
+        </record>
+        <record id="subcategory_business_commercial_premises" model="real_estate.subtype">
+            <field name="name">Commercial premises</field>
+            <field name="type_id" ref="category_business"/>
+        </record>
+        <record id="subcategory_business_mixed_use_building_commercial" model="real_estate.subtype">
+            <field name="name">Mixed use building commercial</field>
+            <field name="type_id" ref="category_business"/>
+        </record>
+        <record id="subcategory_business_catering_industry" model="real_estate.subtype">
+            <field name="name">Catering industry</field>
+            <field name="type_id" ref="category_business"/>
+        </record>
+
+        <!-- Other Subcategories -->
+        <record id="subcategory_other_other" model="real_estate.subtype">
+            <field name="name">Other</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_provincial_farmhouse" model="real_estate.subtype">
+            <field name="name">Provincial farmhouse</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_mill" model="real_estate.subtype">
+            <field name="name">Mill</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_bedandbreakfast" model="real_estate.subtype">
+            <field name="name">Bed &amp; breakfast</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_cottage" model="real_estate.subtype">
+            <field name="name">Cottage</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_static_caravan" model="real_estate.subtype">
+            <field name="name">Static caravan</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_mobile_home" model="real_estate.subtype">
+            <field name="name">Mobile home</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_campsite" model="real_estate.subtype">
+            <field name="name">Campsite</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_holiday_park" model="real_estate.subtype">
+            <field name="name">Holiday park</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_house_boat" model="real_estate.subtype">
+            <field name="name">House boat</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_hotel" model="real_estate.subtype">
+            <field name="name">Hotel</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_other_house" model="real_estate.subtype">
+            <field name="name">Other house</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+        <record id="subcategory_other_boat_cruise" model="real_estate.subtype">
+            <field name="name">Boat cruise</field>
+            <field name="type_id" ref="category_other"/>
+        </record>
+
+
+
+
+
+        
+    </data>
+</odoo>

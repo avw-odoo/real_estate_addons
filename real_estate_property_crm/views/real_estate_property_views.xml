@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record id="real_estate_property_form_inherit" model="ir.ui.view">
+            <field name="name">real_estate_property.form.inherit</field>
+            <field name="model">real_estate.property</field>
+            <field name="inherit_id" ref="real_estate_property.real_estate_property_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button name="action_view_related_leads" type="object" string="View Related Leads" class="oe_stat_button" icon="fa-user-o">
+                        <field name="crm_lead_count2" widget="statinfo" string="leads"/>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

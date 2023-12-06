@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res config settings view form for property</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="70"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Properties" string="Properties" name="real_estate_property">
+                    <block title="Extra">
+                        <setting id="Add CRM" help="Enhance real estate management via CRM integration.">
+                            <field name="module_real_estate_property_crm" widget="upgrade_boolean"/>
+                        </setting>
+                         <setting id="Add Website" help="Publish properties on your Website.">
+                            <field name="module_real_estate_property_website" widget="upgrade_boolean" />
+                        </setting>
+                    </block>
+                    <block title="Templates">
+                        <setting string="Urban planning" company_dependent="1">
+                            <field name="urban_planning_template" class="w-100 real-estate-property-template"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>
