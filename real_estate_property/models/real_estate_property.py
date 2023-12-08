@@ -1,5 +1,6 @@
-#-*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# -*- coding: utf-8 -*-
+# Copyright (C) 2023 Alain van de Werve (avw82@icloud.com)
+
 
 import datetime
 from odoo import models, fields, api

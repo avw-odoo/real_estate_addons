@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+# Copyright (C) 2023 Alain van de Werve (avw82@icloud.com)
+
+
 from odoo import _, models, fields, api
 from odoo.exceptions import ValidationError
 from odoo.tools.sql import SQL
