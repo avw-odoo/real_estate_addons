@@ -90,7 +90,7 @@
         <field name="name">real_estate.stage_view_list</field>
         <field name="model">real_estate.stage</field>
         <field name="arch" type="xml">
-            <tree string="Stages">
+            <tree string="Stages" sample="1">
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
                 <field name="fold"/>
@@ -324,7 +324,7 @@
     <field name="name">real_estate.property_view_kanban</field>
     <field name="model">real_estate.property</field>
     <field name="arch" type="xml">
-        <kanban default_group_by="stage_id">
+        <kanban default_group_by="stage_id" sample="1">
             <field name="id"/>
             <field name="stage_id"/>
             <field name="user_id"/>
