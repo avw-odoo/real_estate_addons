@@ -15,7 +15,20 @@ class RealEstateProperty(models.Model):
     @api.model
     def _get_default_urban_planning(self):
         company = self.env.company
+
         return company.urban_planning_template
+    
+    # Get all the stages
+    @api.model
+    def _read_group_stage_ids(self, stages, domain, order):
+        
+        return self.env['real_estate.stage'].search([])
+    
+    # Set the first stage as default
+    @api.model
+    def _get_default_stage_id(self):
+
+        return self.env['real_estate.stage'].search([], limit=1)
 
 
     # =========================================================
@@ -29,10 +42,8 @@ class RealEstateProperty(models.Model):
     document_count = fields.Integer(compute='_compute_document_count')
 
     # needed for the Kanban view
-    stage_id = fields.Many2one('real_estate.stage', 'Stage', ondelete='restrict', tracking=True,
-        store=True, readonly=False,
-        copy=False, index=True,
-        group_expand='_read_group_stage_ids')
+    stage_id = fields.Many2one('real_estate.stage', ondelete='restrict', default=_get_default_stage_id,
+        group_expand='_read_group_stage_ids', tracking=True, copy=False)
     kanban_state = fields.Selection([
         ('normal', 'Grey'),
         ('done', 'Green'),
@@ -47,7 +58,7 @@ class RealEstateProperty(models.Model):
     street2 = fields.Char()
     zip = fields.Char(change_default=True)
     city = fields.Char()
-    country_id = fields.Many2one('res.country', string='Country', ondelete='restrict') # Set Belgium as default
+    country_id = fields.Many2one('res.country', string='Country', ondelete='restrict')
     country_code = fields.Char(related='country_id.code', string="Country Code")
 
     # Owner
@@ -260,16 +271,6 @@ class RealEstateProperty(models.Model):
         Document = self.env['documents.document']
         for record in self:
             record.document_count = Document.search_count([('property_id', '=', record.id)])
-
-    @api.model
-    def _read_group_stage_ids(self, stages, domain, order):
-        """Provide stages for grouping in views, like Kanban.
-        This can be used to show stages even if there are no records in that stage.
-
-        Returns:
-            list: List of `real_estate.stage` records.
-        """
-        return self.env['real_estate.stage'].search([])
     
     @api.model
     def write(self, vals):
