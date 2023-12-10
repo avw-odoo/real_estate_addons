@@ -4,21 +4,69 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0+e\n"
+"Project-Id-Version: Odoo Server 17.1alpha1+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 13:58+0000\n"
-"PO-Revision-Date: 2023-11-21 18:14+0100\n"
+"POT-Creation-Date: 2023-12-10 10:04+0000\n"
+"PO-Revision-Date: 2023-12-10 10:04+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_5
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bathroom
+msgid "# Bathroom"
+msgstr "# Salle de bain"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bedroom
+msgid "# Bedroom"
+msgstr "# Chambre à coucher"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__carport
+msgid "# Carport"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garage
+msgid "# Garage"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__indoor_parking
+msgid "# Indoor parking"
+msgstr "# Parking intérieur"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__office
+msgid "# Office"
+msgstr "# Bureau"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__outdoor_parking
+msgid "# Outdoor parking"
+msgstr "# Parking extérieur"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__toilet
+msgid "# Toilet"
+msgstr "# Toilette"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "<span> - </span>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "<span> at </span>"
+msgstr "<span> pour </span>"
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_5
 msgid "Accessible for disabled people"
 msgstr "Accessible aux personnes handicapées"
 
@@ -48,7 +96,34 @@ msgid "Activity Type Icon"
 msgstr "Icône de type d’activité"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.actions.act_window,help:real_estate_property.action_stage
+msgid "Add a new stage into the real estate sales process."
+msgstr "Ajouter une nouvelle étape dans le processus de vente immobilière."
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_res_config_settings__module_real_estate_property_crm
+msgid "Add the crm power"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_res_config_settings__module_real_estate_property_website
+msgid "Add the website power"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.actions.act_window,help:real_estate_property.action_properties
+msgid "Add your first property now to Launch your real estate adventure !"
+msgstr ""
+"Ajoutez votre premier bien dès maintenant pour vous lancer dans l’aventure "
+"immobilière !"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Additional Spaces"
+msgstr "Espaces supplémentaires"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Address"
 msgstr "Adresse"
 
@@ -58,20 +133,30 @@ msgid "After signing the deed"
 msgstr "Après la signature de l’acte"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_agricultural_area
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_agricultural_area
 msgid "Agricultural area"
 msgstr "Zone agricole"
 
 #. module: real_estate_property
-#: model:real_estate.category,name:real_estate_property.category_apartment
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_apartment
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_apartment
+#: model:real_estate.type,name:real_estate_property.category_apartment
 msgid "Apartment"
 msgstr "Appartement"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_apartment_block
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_apartment_block
 msgid "Apartment Block"
-msgstr "Immeuble à appartements"
+msgstr "Immeuble d’appartements"
+
+#. module: real_estate_property
+#: model:real_estate.stage,name:real_estate_property.stage6
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Area"
+msgstr "Superficie"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__2
@@ -90,6 +175,8 @@ msgstr "Nombre de pièces jointes"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__attic
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__attic
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__attic
 msgid "Attic"
 msgstr "Grenier"
 
@@ -119,34 +206,51 @@ msgid "Available as of"
 msgstr "À la livraison"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__basement
-msgid "Basement"
-msgstr "Cave"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__bathrooms
+msgid "Bathrooms"
+msgstr "Salles de bains"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bathroom
-msgid "Bathroom"
-msgstr "Salle de bain"
-
-#. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_bedandbreakfast
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_bedandbreakfast
 msgid "Bed & breakfast"
-msgstr "Chambre d'hôtes"
+msgstr "Chambres d’hôtes"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__bedroom
-msgid "Bedroom"
-msgstr "Chambre à coucher"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__bedrooms
+msgid "Bedrooms"
+msgstr "Chambres à coucher"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_boat_cruise
+#. odoo-python
+#: code:addons/real_estate_property/models/real_estate_property_stage.py:0
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage1
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage2
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage3
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage4
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage5
+#: model:real_estate.stage,legend_blocked:real_estate_property.stage6
+msgid "Blocked"
+msgstr "Bloqué"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_boat_cruise
 msgid "Boat cruise"
-msgstr "Croisière en bateau"
+msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_building
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__boiler
+msgid "Boiler"
+msgstr "Chaudière"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__breakfast_nook
+msgid "Breakfast nook"
+msgstr "Coin repas"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_building
 msgid "Building"
-msgstr "Immeuble"
+msgstr "Bâtiment"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__building_condition
@@ -154,25 +258,35 @@ msgid "Building Condition"
 msgstr "État du bâtiment"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Building Details"
+msgstr "Détails du bâtiment"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__building_footprint
+msgid "Building Footprint"
+msgstr "Surface Bâtie"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search
 msgid "Building condition"
 msgstr "État du bâtiment"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_building_land
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_building_land
 msgid "Building land"
 msgstr "Terrain à bâtir"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_bungalow
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_bungalow
 msgid "Bungalow"
 msgstr "Pavillon"
 
 #. module: real_estate_property
-#: model:real_estate.category,name:real_estate_property.category_business
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_business
+#: model:real_estate.subtype,name:real_estate_property.subcategory_business_business
+#: model:real_estate.type,name:real_estate_property.category_business
 msgid "Business"
-msgstr "Commerce"
+msgstr "Entreprises"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__cadastre_number
@@ -185,98 +299,137 @@ msgid "Cadastre section"
 msgstr "Section du cadastre"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_campsite
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_campsite
 msgid "Campsite"
 msgstr "Camping"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_8
+#: model:real_estate.extra.tag,name:real_estate_property.extra_8
 msgid "Caretaker or concierge"
 msgstr "Gardien ou concierge"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__carport
-msgid "Carport"
-msgstr "Carport"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__carpet
+msgid "Carpet"
+msgstr "Tapis"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_castle
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__carpet_tiles
+msgid "Carpet tiles"
+msgstr "Dalles de moquette"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_castle
 msgid "Castle"
-msgstr "Chateau"
+msgstr "Château"
 
 #. module: real_estate_property
-#: model:ir.actions.act_window,name:real_estate_property.action_categories
-msgid "Categories"
-msgstr "Types"
-
-#. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__name
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__category_id
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
-msgid "Category"
-msgstr "Type"
-
-#. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_catering_industry
+#: model:real_estate.subtype,name:real_estate_property.subcategory_business_catering_industry
 msgid "Catering industry"
-msgstr "Horeca"
+msgstr "Secteur de la restauration"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_chalet
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__basement
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__cellar
+msgid "Cellar"
+msgstr "Cave"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__cellars_1
+msgid "Cellars -1"
+msgstr "Cave -1"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__cellars_2
+msgid "Cellars -2"
+msgstr "Cave -2"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__cellars_3
+msgid "Cellars -3"
+msgstr "Cave -3"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_chalet
 msgid "Chalet"
-msgstr "Chalet"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__city
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "City"
 msgstr "Ville"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_closed_garage
+#: model:real_estate.subtype,name:real_estate_property.subcategory_garage_closed_garage
 msgid "Closed garage"
 msgstr "Garage fermé"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_closed_parking
+#: model:real_estate.subtype,name:real_estate_property.subcategory_garage_closed_parking
 msgid "Closed parking"
 msgstr "Parking fermé"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__color
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__color
 msgid "Color"
 msgstr "Couleur"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_commercial_premises
-msgid "Commercial premises"
-msgstr "Locaux industriels"
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__comment
+msgid "Comment"
+msgstr "Commentaire"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_commercial_villa
+#: model:real_estate.subtype,name:real_estate_property.subcategory_business_commercial_premises
+msgid "Commercial premises"
+msgstr "Locaux commerciaux"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__commercial_space
+msgid "Commercial space"
+msgstr "Espace commercial"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_commercial_villa
 msgid "Commercial villa"
 msgstr "Villa commerciale"
 
 #. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__company_id
 msgid "Company"
-msgstr ""
+msgstr "Société"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__company_currency_id
 msgid "Company Currency"
+msgstr "Devise de la société"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__composition_ids
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Composition"
 msgstr ""
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__composition
-msgid "Composition"
-msgstr "Composition"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__concrete
+msgid "Concrete"
+msgstr "Béton"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
-msgid "Composition & Materials"
-msgstr "Composition et matériaux"
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Condition"
+msgstr "État"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
 
 #. module: real_estate_property
 #: model:ir.ui.menu,name:real_estate_property.menu_config
@@ -284,23 +437,18 @@ msgid "Configuration"
 msgstr ""
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__construction_year
-msgid "Construction Year"
-msgstr "Année de construction"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__cork
+msgid "Cork"
+msgstr "Liège"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
-msgid "Contacts"
-msgstr ""
-
-#. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_cottage
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_cottage
 msgid "Cottage"
-msgstr "Gîtes"
+msgstr "Chalet"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__country_id
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Country"
 msgstr "Pays"
 
@@ -310,30 +458,34 @@ msgid "Country Code"
 msgstr "Code pays"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_country_cottage
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_country_cottage
 msgid "Country Cottage"
-msgstr "Maison de campagne"
+msgstr "Chalet de campagne"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_covered_parking_space
+#: model:real_estate.subtype,name:real_estate_property.subcategory_garage_covered_parking_space
 msgid "Covered parking space"
-msgstr "Place de parking couverte"
+msgstr "Espace de stationnement couvert"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__create_uid
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__create_uid
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__create_uid
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__create_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Créer par"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__create_date
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__create_date
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__create_date
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__create_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Créer le"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__7
@@ -341,15 +493,53 @@ msgid "Depending on the tenant"
 msgstr "Selon le locataire"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__name
+msgid "Description"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__dining_room
+msgid "Dining room"
+msgstr "Salle à manger"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__display_name
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__display_name
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__display_name
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__display_name
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_duplex
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__distribution_screed
+msgid "Distribution screed"
+msgstr "Chape de répartition"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_documents_document
+msgid "Document"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__document_count
+msgid "Document Count"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__document_ids
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Documents"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__dressing
+msgid "Dressing"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_duplex
 msgid "Duplex"
 msgstr ""
 
@@ -361,7 +551,7 @@ msgid "East"
 msgstr "Est"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_4
+#: model:real_estate.extra.tag,name:real_estate_property.extra_4
 msgid "Elevator"
 msgstr "Ascenseur"
 
@@ -371,32 +561,76 @@ msgid "Email"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_exceptional_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
+msgid "Enhance real estate management via CRM integration."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__entrance_hall
+msgid "Entrance hall"
+msgstr "Hall d’entrée"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__equipped_kitchen
+msgid "Equipped kitchen"
+msgstr "Cuisine équipée"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_exceptional_property
 msgid "Exceptional property"
-msgstr "Bien exceptionnel"
+msgstr "Bien d’exception"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__expected_revenue
+msgid "Expected Revenue"
+msgstr "Honoraires"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Exterior and Land"
+msgstr "Extérieur et terrain"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
+msgid "Extra"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__name
+#: model:ir.ui.menu,name:real_estate_property.menu_config_extra_tags
+msgid "Extra Information"
+msgstr "Informations supplémentaires"
 
 #. module: real_estate_property
 #: model:ir.actions.act_window,name:real_estate_property.action_tags
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__property_extra_ids
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__name
-#: model:ir.ui.menu,name:real_estate_property.menu_config_extra_tags
 msgid "Extra information"
-msgstr ""
+msgstr "Informations supplémentaires"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_farmhouse
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_farmhouse
 msgid "Farmhouse"
 msgstr "Ferme"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_fields
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_fields
 msgid "Fields"
-msgstr "Champs"
+msgstr "Terrains"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model:real_estate.stage,name:real_estate_property.stage2
+msgid "File"
+msgstr "Constitution dossier"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Finance"
-msgstr "Finance"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Financial Expectations"
+msgstr "Attentes financières"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__1
@@ -404,9 +638,34 @@ msgid "Finished attic"
 msgstr "Grenier aménagé"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_6
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__first_floor
+msgid "First floor"
+msgstr "Premier étage"
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_6
 msgid "First occupation"
 msgstr "Première occupation"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__floor_level
+msgid "Floor Level"
+msgstr "Étage"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__floor_type
+msgid "Floor Type"
+msgstr "Type de sol"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__floorboards
+msgid "Floorboards"
+msgstr "Plancher"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__fold
+msgid "Folded in Kanban"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_follower_ids
@@ -424,59 +683,102 @@ msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_forest
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_forest
 msgid "Forest"
 msgstr "Forêt"
 
 #. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__fourth_floor
+msgid "Fourth floor"
+msgstr "Quatrième étage"
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__frontage_width
-msgid "Frontage width"
+msgid "Frontage Width"
 msgstr "Largeur de la façade"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_7
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__fully_equipped_kitchen
+msgid "Fully equipped kitchen"
+msgstr "Cuisine entièrement équipée"
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_7
 msgid "Furnished"
 msgstr "Meublé"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garage
-#: model:real_estate.category,name:real_estate_property.category_garage
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__garage
+#: model:real_estate.type,name:real_estate_property.category_garage
 msgid "Garage"
-msgstr "Garage"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garden
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__garden
 msgid "Garden"
 msgstr "Jardin"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__garden_orientation
-msgid "Garden orientation"
+msgid "Garden Orientation"
 msgstr "Orientation jardin"
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__garden_chalet
+msgid "Garden chalet"
+msgstr "Chalet de jardin"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__garden_level
+msgid "Garden level"
+msgstr "Rez-de-jardin"
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_1
 msgid "Gaz"
-msgstr "Gaz"
-
-#. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
-msgid "General information"
-msgstr "Information général"
-
-#. module: real_estate_property
-#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__1
-msgid "Good"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_ground_floor
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "General Information"
+msgstr "Informations générales"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__1
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__good
+msgid "Good"
+msgstr "Bon"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__kanban_state__done
+msgid "Green"
+msgstr "Écologique "
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__legend_done
+msgid "Green Kanban Label"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__kanban_state__normal
+msgid "Grey"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__legend_normal
+msgid "Grey Kanban Label"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__ground_floor
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_ground_floor
 msgid "Ground floor"
 msgstr "Rez de chaussée"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_subtype_view_search
 msgid "Group By"
 msgstr ""
 
@@ -486,32 +788,33 @@ msgid "Has Message"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_holiday_park
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_holiday_park
 msgid "Holiday park"
 msgstr "Parc de vacances"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_hotel
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_hotel
 msgid "Hotel"
-msgstr ""
+msgstr "Hôtel"
 
 #. module: real_estate_property
-#: model:real_estate.category,name:real_estate_property.category_house
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_house
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_house
+#: model:real_estate.type,name:real_estate_property.category_house
 msgid "House"
 msgstr "Maison"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_house_boat
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_house_boat
 msgid "House boat"
-msgstr "Bateau-logement"
+msgstr "Bateau-maison"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__id
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__id
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__id
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__id
 msgid "ID"
 msgstr ""
 
@@ -532,8 +835,14 @@ msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_has_error
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__property_image
+msgid "Illustration"
+msgstr "Image du bien"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__3
@@ -541,29 +850,47 @@ msgid "Immediately"
 msgstr "Immédiatement"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__indoor_parking
-msgid "Indoor parking"
-msgstr "Parking intérieur"
+#. odoo-python
+#: code:addons/real_estate_property/models/real_estate_property_stage.py:0
+#: model:real_estate.stage,legend_normal:real_estate_property.stage1
+#: model:real_estate.stage,legend_normal:real_estate_property.stage2
+#: model:real_estate.stage,legend_normal:real_estate_property.stage3
+#: model:real_estate.stage,legend_normal:real_estate_property.stage4
+#: model:real_estate.stage,legend_normal:real_estate_property.stage5
+#: model:real_estate.stage,legend_normal:real_estate_property.stage6
+msgid "In Progress"
+msgstr "En-cours"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_industrial_premises
+#: model:real_estate.subtype,name:real_estate_property.subcategory_industry_industrial_premises
 msgid "Industrial premises"
 msgstr "Locaux industriels"
 
 #. module: real_estate_property
-#: model:real_estate.category,name:real_estate_property.category_industry
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__industrial_tiles
+msgid "Industrial tiles"
+msgstr "Dalles industrielles"
+
+#. module: real_estate_property
+#: model:real_estate.type,name:real_estate_property.category_industry
 msgid "Industry"
-msgstr ""
+msgstr "Secteur"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__description
 msgid "Internal notes"
-msgstr ""
+msgstr "Notes internes"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Internal notes..."
-msgstr ""
+msgstr "Notes internes…"
+
+#. module: real_estate_property
+#. odoo-python
+#: code:addons/real_estate_property/models/documents_document.py:0
+msgid "Invalid property search"
+msgstr "Recherche de biens invalide"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_is_follower
@@ -576,8 +903,38 @@ msgid "Just renovated"
 msgstr "Remis à neuf"
 
 #. module: real_estate_property
-#: model:real_estate.category,name:real_estate_property.category_land
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_land
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__legend_blocked
+msgid "Kanban Blocked"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__legend_normal
+msgid "Kanban Ongoing"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__kanban_state
+msgid "Kanban State"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__legend_done
+msgid "Kanban Valid"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__kitchen
+msgid "Kitchen"
+msgstr "Cuisine"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__lamination
+msgid "Lamination"
+msgstr "laminage"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_land
+#: model:real_estate.type,name:real_estate_property.category_land
 msgid "Land"
 msgstr "Terrain"
 
@@ -592,25 +949,44 @@ msgid "Land width"
 msgstr "Largeur terrain"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_large_town_house
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_large_town_house
 msgid "Large town house"
 msgstr "Grande maison de ville"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__write_uid
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__write_uid
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__write_uid
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__write_uid
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__write_uid
 msgid "Last Updated by"
 msgstr ""
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_category__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__write_date
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__write_date
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property_extra_tag__write_date
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__write_date
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__write_date
 msgid "Last Updated on"
 msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__laundry_room
+msgid "Laundry room"
+msgstr "Buanderie"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Level"
+msgstr "Niveau"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__linoleum
+msgid "Linoleum"
+msgstr "Linoléum"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__livable_area
@@ -618,32 +994,37 @@ msgid "Livable Area"
 msgstr "Surface habitable"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_loft
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__living_room
+msgid "Living room"
+msgstr "Salon"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_loft
 msgid "Loft"
 msgstr ""
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Main Features"
 msgstr "Caractéristiques principales"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_manor_house
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_manor_house
 msgid "Manor house"
 msgstr "Manoir"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_mansion
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_mansion
 msgid "Mansion"
 msgstr "Maison de maître"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__materials
-msgid "Materials"
-msgstr "Matériaux"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__marble
+msgid "Marble"
+msgstr "Marbre"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_meadow
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_meadow
 msgid "Meadow"
 msgstr "Champ"
 
@@ -658,29 +1039,39 @@ msgid "Messages"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_mill
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__mezzanine
+msgid "Mezzanine"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__mezzanine_floor
+msgid "Mezzanine floor"
+msgstr "Mezzanine"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_mill
 msgid "Mill"
 msgstr "Moulin"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_mixed_use_building
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_mixed_use_building
 msgid "Mixed use building"
 msgstr "Bâtiment à usage mixte"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_business_mixed_use_building_commercial
+#: model:real_estate.subtype,name:real_estate_property.subcategory_business_mixed_use_building_commercial
 msgid "Mixed use building commercial"
 msgstr "Bâtiment à usage mixte commercial"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_mixed_use_building
+#: model:real_estate.subtype,name:real_estate_property.subcategory_industry_mixed_use_building
 msgid "Mixed-use building"
 msgstr "Bâtiment à usage mixte"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_mixed_use_building_offices
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_mixed_use_building_offices
 msgid "Mixed-use building offices"
-msgstr "Bâtiment à usage mixte commercial"
+msgstr "Immeuble de bureaux à usage mixte"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__owner_mobile
@@ -688,14 +1079,34 @@ msgid "Mobile"
 msgstr "GSM proprio"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_mobile_home
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_mobile_home
 msgid "Mobile home"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__moderate
+msgid "Moderate"
 msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__natural_stone
+msgid "Natural stone"
+msgstr "Pierre naturelle"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__new
+msgid "New"
+msgstr "Nouveau"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__new_kitchen
+msgid "New kitchen"
+msgstr "Nouvelle cuisine"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_calendar_event_id
@@ -718,6 +1129,11 @@ msgid "Next Activity Type"
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__night_hall
+msgid "Night hall"
+msgstr "hall de nuit"
+
+#. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic__2
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__basement__2
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden__2
@@ -727,7 +1143,7 @@ msgid "No"
 msgstr "Non"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_non_building_land
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_non_building_land
 msgid "Non-building land"
 msgstr "Terrain non constructible"
 
@@ -753,9 +1169,28 @@ msgid "Northwest"
 msgstr "Nord-Ouest"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__basement__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__7
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__frontages_number__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__professional_practice__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__rear_facade_orientation__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__not_specified
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__not_specified
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Not Specified"
+msgstr "Non défini"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Notes"
-msgstr "Notes internes"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_needaction_counter
@@ -793,63 +1228,90 @@ msgid "Offers starting at"
 msgstr "Faire Offre"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__office
-#: model:real_estate.category,name:real_estate_property.category_office
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_office
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__office
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_office
+#: model:real_estate.type,name:real_estate_property.category_office
 msgid "Office"
 msgstr "Bureau"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_office_block
+#: model:real_estate.subtype,name:real_estate_property.subcategory_office_block
 msgid "Office block"
 msgstr "Immeuble de bureaux"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_orchard
+#: model:real_estate.stage,name:real_estate_property.stage3
+msgid "On Sale"
+msgstr "Vente"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_orchard
 msgid "Orchard"
 msgstr "Verger"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__transaction_type__3
-#: model:real_estate.category,name:real_estate_property.category_other
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_other
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_other
+#: model:real_estate.type,name:real_estate_property.category_other
 msgid "Other"
 msgstr "Autres"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_other_house
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_other_house
 msgid "Other house"
-msgstr "Autres maisons"
+msgstr "Autre maison"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_other_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_other_property
 msgid "Other property"
 msgstr "Autres biens"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__outdoor_parking
-msgid "Outdoor parking"
-msgstr "Parking extérieur"
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Outdoor Spaces"
+msgstr "Espaces extérieurs"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_garage_outdoor_parking_space
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__outdoor_fittings
+msgid "Outdoor fittings"
+msgstr "Aménagements extérieurs"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_garage_outdoor_parking_space
 msgid "Outdoor parking space"
-msgstr "Place de parking extérieure"
+msgstr "Espace de stationnement extérieur"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__partner_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.Real_estate_property_view_activity
 msgid "Owner"
 msgstr "Proprio"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Owner email"
 msgstr "Email proprio"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Owner mobile"
-msgstr "GSM proprio"
+msgstr "Tel proprio"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__pvc
+msgid "PVC"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__pantry
+msgid "Pantry"
+msgstr "Cellier"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__parking
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Parking"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__participants
@@ -857,14 +1319,34 @@ msgid "Participants"
 msgstr "Intervenants"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_pavillon
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_pavillon
 msgid "Pavillon"
 msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_penthouse
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_penthouse
 msgid "Penthouse"
 msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__perfect
+msgid "Perfect"
+msgstr "Parfait"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__playroom
+msgid "Playroom"
+msgstr "Salle de jeux"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__polished_concrete
+msgid "Polished concrete"
+msgstr "Béton poli"
+
+#. module: real_estate_property
+#: model:real_estate.stage,name:real_estate_property.stage5
+msgid "Pre-Closing"
+msgstr "Sous acte"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__professional_practice
@@ -875,13 +1357,16 @@ msgstr "Profession libérale"
 #: model:ir.actions.act_window,name:real_estate_property.action_properties
 #: model:ir.ui.menu,name:real_estate_property.menu_1
 #: model:ir.ui.menu,name:real_estate_property.menu_root
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
 msgid "Properties"
 msgstr "Biens"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__property_image
-msgid "Property Image"
-msgstr "Image du bien"
+#: model:ir.model.fields,field_description:real_estate_property.field_documents_document__property_id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__property_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.Real_estate_property_view_activity
+msgid "Property"
+msgstr "Bien"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__name
@@ -889,49 +1374,101 @@ msgid "Property Name"
 msgstr "Nom du bien"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__category_id
-msgid "Property Type"
-msgstr "Type de bien"
-
-#. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
-msgid "Property information"
-msgstr "Information du bien"
-
-#. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Property name"
 msgstr "Nom du bien"
 
 #. module: real_estate_property
-#: model:ir.ui.menu,name:real_estate_property.menu_config_subcat
-msgid "Property subtypes"
-msgstr "Sous type de biens"
+#: model:real_estate.stage,name:real_estate_property.stage1
+msgid "Prospecting"
+msgstr "Prospection"
 
 #. module: real_estate_property
-#: model:ir.ui.menu,name:real_estate_property.menu_config_cat
-msgid "Property types"
-msgstr "Type de biens"
-
-#. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_provincial_farmhouse
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_provincial_farmhouse
 msgid "Provincial farmhouse"
-msgstr "Ferme provinciale"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
+msgid "Publish properties on your Website."
+msgstr ""
+
+#. module: real_estate_property
+#. odoo-python
+#: code:addons/real_estate_property/models/real_estate_property_stage.py:0
+#: model:real_estate.stage,legend_done:real_estate_property.stage1
+#: model:real_estate.stage,legend_done:real_estate_property.stage2
+#: model:real_estate.stage,legend_done:real_estate_property.stage3
+#: model:real_estate.stage,legend_done:real_estate_property.stage4
+#: model:real_estate.stage,legend_done:real_estate_property.stage5
+#: model:real_estate.stage,legend_done:real_estate_property.stage6
+msgid "Ready for Next Stage"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__user_id
+msgid "Real Estate Agent"
+msgstr "Agent immobilier"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_extra_tag
+msgid "Real Estate Extra Information"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_property
+msgid "Real Estate Property"
+msgstr "Bien Immobilier"
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_room
+msgid "Real Estate Room"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_stage
+msgid "Real Estate Stage"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_stage
+msgid "Real Estate Stages"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_subtype
+msgid "Real Estate Subtype"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model,name:real_estate_property.model_real_estate_type
+msgid "Real Estate Type"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__rear_facade_orientation
-msgid "Rear facade orientation"
+msgid "Rear Facade Orientation"
 msgstr "Orientation de la façade arrière"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_land_recreational_area
+#: model:real_estate.subtype,name:real_estate_property.subcategory_land_recreational_area
 msgid "Recreational area"
 msgstr "Zone de loisirs"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__renovation_year
-msgid "Renovation Year"
-msgstr "Année de rénovation"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__kanban_state__blocked
+msgid "Red"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__legend_blocked
+msgid "Red Kanban Label"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.document_view_search_inherited
+msgid "Related Property"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__transaction_type__2
@@ -939,10 +1476,9 @@ msgid "Rent"
 msgstr "Louer"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__user_id
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search
 msgid "Representative"
-msgstr "Agent immobilier"
+msgstr "Agent"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_user_id
@@ -950,17 +1486,57 @@ msgid "Responsible User"
 msgstr ""
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__room_area
+msgid "Room Area"
+msgstr "Surface de la pièce"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__room_condition
+msgid "Room Condition"
+msgstr "État de la pièce"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Rooms"
+msgstr "Pièces"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__sauna
+msgid "Sauna"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__screed
+msgid "Screed"
+msgstr "Chape"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search
 msgid "Search Properties"
 msgstr "Recherche de biens"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search_subcategory
-msgid "Search Subcategories"
-msgstr ""
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_subtype_view_search
+msgid "Search Subtype"
+msgstr "Recherche de sous-type"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__second_floor
+msgid "Second floor"
+msgstr "Deuxième étage"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Select a date"
+msgstr "Sélectionnez une date"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Select or create the Owner"
 msgstr "Sélectionner ou créer le propriétaire"
 
@@ -975,14 +1551,35 @@ msgid "Selling Price"
 msgstr "Prix"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.list_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_list
 msgid "Selling properties's total value"
-msgstr "Total des biens en vente"
+msgstr "Valeur totale des biens vendus"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_service_flat
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__semi_equipped_kitchen
+msgid "Semi-equipped kitchen"
+msgstr "Cuisine semi-équipée"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_service_flat
 msgid "Service flat"
 msgstr "Appartement de service"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.property_config_settings_action
+#: model:ir.ui.menu,name:real_estate_property.property_menu_configuration
+msgid "Settings"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__shower_room
+msgid "Shower room"
+msgstr "Salle de douche"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__2
@@ -1013,13 +1610,35 @@ msgid ""
 "basements."
 msgstr ""
 "Espace dans une propriété adapté à la vie quotidienne, incluant les "
-"chambres, les salons et les cuisines, mais excluant des zones telles que "
-"les garages et les sous-sols non aménagés."
+"chambres, les salons et les cuisines, mais excluant des zones telles que les"
+" garages et les sous-sols non aménagés."
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_other_static_caravan
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__stage_id
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_stage_view_form
+msgid "Stage"
+msgstr "Étape"
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_stage_view_form
+msgid "Stage Definition"
+msgstr "Définition des étapes"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_stage__name
+msgid "Stage Name"
+msgstr "Nom de l’étape"
+
+#. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_stage
+#: model_terms:ir.ui.view,arch_db:real_estate_property.stage_view_list
+msgid "Stages"
+msgstr "Étapes"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_other_static_caravan
 msgid "Static caravan"
-msgstr "Caravane résidentielle"
+msgstr "Caravane fixe"
 
 #. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__activity_state
@@ -1031,19 +1650,34 @@ msgid ""
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__storage_attic
+msgid "Storage attic"
+msgstr "Grenier de stockage"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__storage_cellar
+msgid "Storage cellar"
+msgstr "Cave de stockage"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__storage_room
+msgid "Storage room"
+msgstr "Espace de stockage"
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__street
 msgid "Street"
 msgstr "Rue"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Street 2..."
-msgstr "Rue 2..."
+msgstr ""
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Street..."
-msgstr "Rue..."
+msgstr "Rue…"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__street2
@@ -1051,33 +1685,36 @@ msgid "Street2"
 msgstr "Rue 2"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_studio
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_studio
 msgid "Studio"
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__subtype_id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__name
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Subtype"
+msgstr "Sous-type"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__subtype_id
+msgid "Subtype to specify the selected estatetype in detail."
+msgstr ""
+
+#. module: real_estate_property
 #: model:ir.actions.act_window,name:real_estate_property.action_subcategories
-msgid "Subcategories"
+#: model:ir.ui.menu,name:real_estate_property.menu_config_subcat
+msgid "Subtypes"
 msgstr "Sous types"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subcategory__name
-msgid "Subcategory"
-msgstr "Sous type"
-
-#. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__subcategory_id
-msgid "Subtype"
-msgstr "Sous type"
-
-#. module: real_estate_property
-#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__subcategory_id
-msgid "Subtype to specify the selected estatetype in detail."
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
+msgid "Templates"
 msgstr ""
-"Sous-type pour préciser en détail le type de bien immobilier sélectionné."
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__terrace
 msgid "Terrace"
 msgstr "Terrasse"
 
@@ -1088,7 +1725,7 @@ msgstr "Surface terrasse"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace_orientation
-msgid "Terrace orientation"
+msgid "Terrace Orientation"
 msgstr "Orientation terrasse"
 
 #. module: real_estate_property
@@ -1101,11 +1738,11 @@ msgstr ""
 #. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__building_footprint
 msgid ""
-"The area of a plot of land covered by a building, measured from its "
-"external walls."
+"The area of a plot of land covered by a building, measured from its external"
+" walls."
 msgstr ""
-"La superficie d’un terrain couverte par un bâtiment, mesurée à partir de "
-"ses murs extérieurs."
+"La superficie d’un terrain couverte par un bâtiment, mesurée à partir de ses"
+" murs extérieurs."
 
 #. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__transaction_type
@@ -1113,17 +1750,37 @@ msgid "The specific type of sale or rental."
 msgstr "Le type spécifique de vente ou de location."
 
 #. module: real_estate_property
-#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__category_id
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__type_id
 msgid ""
 "The type of the property. Estate type should have matching estate subtype."
 msgstr ""
-"Le type de propriété. Le type de bien immobilier devrait avoir un sous-type "
-"correspondant."
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_level__third_floor
+msgid "Third floor"
+msgstr "Troisième étage"
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_stage__fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__tiles
+msgid "Tiles"
+msgstr "Carrelage"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__5
 msgid "To be defined"
 msgstr "À définir"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__to_refresh
+msgid "To refresh"
+msgstr "A rafraîchir"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__5
@@ -1137,23 +1794,54 @@ msgstr "À rénover"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__3
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__room_condition__to_restore
 msgid "To restore"
 msgstr "À restaurer"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__toilet
-msgid "Toilet"
-msgstr "Toilette"
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__toilets
+msgid "Toilets"
+msgstr "Toilettes"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_town_house
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_stage_view_form
+msgid "Tooltips"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Total Area"
+msgstr "Surface totale"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_town_house
 msgid "Town house"
-msgstr "Maison bel-étage"
+msgstr "Maison de ville"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_triplex
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Transaction"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "Transaction Details"
+msgstr "Détails de la transaction"
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_triplex
 msgid "Triplex"
-msgstr "Triplex"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__type_id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_subtype__type_id
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_type__name
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_search
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_subtype_view_search
+msgid "Type"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__transaction_type
@@ -1166,10 +1854,19 @@ msgid "Type of the exception activity on record."
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_config_cat
+msgid "Types"
+msgstr "Type de biens"
+
+#. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__availabilty__1
-#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__building_condition__7
 msgid "Undefined"
 msgstr "Non défini"
+
+#. module: real_estate_property
+#: model:real_estate.stage,name:real_estate_property.stage4
+msgid "Under Offer"
+msgstr "Sous offre"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic_type__2
@@ -1177,20 +1874,36 @@ msgid "Unfinished attic"
 msgstr "Grenier non aménagé"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Urban Planning"
 msgstr "Urbanisme"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__urban_planning
+#: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
 msgid "Urban planning"
 msgstr "Urbanisme"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_house_villa
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model:ir.model.fields,field_description:real_estate_property.field_res_company__urban_planning_template
+#: model:ir.model.fields,field_description:real_estate_property.field_res_config_settings__urban_planning_template
+msgid "Urban planning template"
+msgstr "Modèle Urbanisme"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__veranda
+msgid "Veranda"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.subtype,name:real_estate_property.subcategory_house_villa
 msgid "Villa"
-msgstr "Villa"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__vinyl
+msgid "Vinyl"
+msgstr "Vinyle"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__visits
@@ -1198,14 +1911,24 @@ msgid "Visits"
 msgstr "Visites"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Visits & Participants"
-msgstr "Visites et inrtervenants"
+msgstr ""
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_industry_warehouse
+#: model:real_estate.subtype,name:real_estate_property.subcategory_industry_warehouse
 msgid "Warehouse"
 msgstr "Entrepôt"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: real_estate_property
+#: model:ir.model.fields,help:real_estate_property.field_real_estate_property__website_message_ids
+msgid "Website communication history"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__garden_orientation__4
@@ -1213,6 +1936,21 @@ msgstr "Entrepôt"
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__terrace_orientation__4
 msgid "West"
 msgstr "Ouest"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__wooden_floor
+msgid "Wooden floor"
+msgstr "Parquet en bois"
+
+#. module: real_estate_property
+#: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__workshop
+msgid "Workshop"
+msgstr "Atelier"
+
+#. module: real_estate_property
+#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__construction_year
+msgid "Year of Construction"
+msgstr "Année de construction"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_property__attic__1
@@ -1224,9 +1962,9 @@ msgid "Yes"
 msgstr "Oui"
 
 #. module: real_estate_property
-#: model_terms:ir.ui.view,arch_db:real_estate_property.form
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "ZIP"
-msgstr "Code Postale"
+msgstr ""
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__zip
@@ -1234,54 +1972,44 @@ msgid "Zip"
 msgstr "Code Postale"
 
 #. module: real_estate_property
-#: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__building_footprint
-msgid "building footprint"
-msgstr "surface bâtie"
-
-#. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__land_width
 msgid "distance across a piece of land at its widest point."
 msgstr "distance à travers un terrain à son point le plus large."
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_3
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "e.g. 8"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
+msgid "e.g. House"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_3
 msgid "electricity"
-msgstr "electricité"
+msgstr "Électricité"
 
 #. module: real_estate_property
-#: model:real_estate.subcategory,name:real_estate_property.subcategory_apartment_kot
+#: model:real_estate.subtype,name:real_estate_property.subcategory_apartment_kot
 msgid "kot"
-msgstr "kot"
-
-#. module: real_estate_property
-#: model:ir.model,name:real_estate_property.model_real_estate_property_extra_tag
-msgid "real estate Extra information"
-msgstr "informations supplémentaires"
-
-#. module: real_estate_property
-#: model:ir.model,name:real_estate_property.model_real_estate_category
-msgid "real estate category"
-msgstr "type du bien"
-
-#. module: real_estate_property
-#: model:ir.model,name:real_estate_property.model_real_estate_property
-msgid "real estate property"
-msgstr "bien immobilier"
-
-#. module: real_estate_property
-#: model:ir.model,name:real_estate_property.model_real_estate_subcategory
-msgid "real estate sub-category"
-msgstr "sous type de bien"
+msgstr "Kot"
 
 #. module: real_estate_property
 #: model:ir.model.fields,help:real_estate_property.field_real_estate_property__land_area
 msgid ""
-"the total surface area of a piece of land, measured in square meters (m²) "
-"or acres."
+"the total surface area of a piece of land, measured in square meters (m²) or"
+" acres."
 msgstr ""
 "la surface totale d’un terrain, mesurée en mètres carrés (m²) ou en ares."
 
 #. module: real_estate_property
-#: model:real_estate.property.extra.tag,name:real_estate_property.extra_2
+#: model:ir.actions.act_window,name:real_estate_property.action_categories
+msgid "types"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.extra.tag,name:real_estate_property.extra_2
 msgid "water"
-msgstr "eau"
+msgstr "Eau"

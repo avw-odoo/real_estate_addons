@@ -18,7 +18,7 @@
                     </block>
                     <block title="Templates">
                         <setting string="Urban planning" company_dependent="1">
-                            <field name="urban_planning_template" class="w-100 real-estate-property-template"/>
+                            <field name="urban_planning_template" options="{'codeview': true}" class="w-100 real-estate-property-template"/>
                         </setting>
                     </block>
                 </app>
