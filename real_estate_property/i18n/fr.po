@@ -103,12 +103,12 @@ msgstr "Ajouter une nouvelle étape dans le processus de vente immobilière."
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_res_config_settings__module_real_estate_property_crm
 msgid "Add the crm power"
-msgstr ""
+msgstr "Ajoutez la puissance du CRM"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_res_config_settings__module_real_estate_property_website
 msgid "Add the website power"
-msgstr ""
+msgstr "Ajoutez la puissance de Website"
 
 #. module: real_estate_property
 #: model_terms:ir.actions.act_window,help:real_estate_property.action_properties
@@ -563,7 +563,7 @@ msgstr ""
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
 msgid "Enhance real estate management via CRM integration."
-msgstr ""
+msgstr "Améliorez la gestion immobilière grâce à l'intégration du CRM."
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__entrance_hall
@@ -981,7 +981,7 @@ msgstr "Buanderie"
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "Level"
-msgstr "Niveau"
+msgstr "Étage"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__floor_type__linoleum
@@ -1391,7 +1391,7 @@ msgstr ""
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
 msgid "Publish properties on your Website."
-msgstr ""
+msgstr "Publiez des propriétés sur votre site Web."
 
 #. module: real_estate_property
 #. odoo-python
@@ -1710,7 +1710,7 @@ msgstr "Sous types"
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.res_config_settings_view_form
 msgid "Templates"
-msgstr ""
+msgstr "Modèles"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__terrace
@@ -1964,7 +1964,7 @@ msgstr "Oui"
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "ZIP"
-msgstr ""
+msgstr "CP"
 
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__zip
@@ -1979,12 +1979,12 @@ msgstr "distance à travers un terrain à son point le plus large."
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "e.g. 8"
-msgstr ""
+msgstr "p. ex. 8"
 
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "e.g. House"
-msgstr ""
+msgstr "p. ex. Maison"
 
 #. module: real_estate_property
 #: model:real_estate.extra.tag,name:real_estate_property.extra_3
