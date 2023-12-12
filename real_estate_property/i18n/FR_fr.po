@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.1alpha1+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 10:04+0000\n"
-"PO-Revision-Date: 2023-12-10 10:04+0000\n"
+"POT-Creation-Date: 2023-12-12 15:54+0000\n"
+"PO-Revision-Date: 2023-12-12 15:54+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -56,6 +56,41 @@ msgid "# Toilet"
 msgstr "# Toilette"
 
 #. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Affectation urbanistique</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Droit de préemption</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Infraction(s) urbanistique(s)</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Jugement en cours</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Permis de bâtir</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Permis de lotir</b>"
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.ui.view,arch_db:real_estate_property.urban_template
+msgid "<b>Servitude</b>"
+msgstr ""
+
+#. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
 msgid "<span> - </span>"
 msgstr ""
@@ -86,6 +121,11 @@ msgid "Activity Exception Decoration"
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_activity_plan
+msgid "Activity Plans"
+msgstr "Plans d'Activités"
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_state
 msgid "Activity State"
 msgstr "État de l’activité"
@@ -94,6 +134,17 @@ msgstr "État de l’activité"
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__activity_type_icon
 msgid "Activity Type Icon"
 msgstr "Icône de type d’activité"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_activity_types
+#: model:ir.ui.menu,name:real_estate_property.menu_activity_types
+msgid "Activity Types"
+msgstr "Types d'activités"
+
+#. module: real_estate_property
+#: model_terms:ir.actions.act_window,help:real_estate_property.action_plan
+msgid "Add a new plan"
+msgstr "Ajouter un nouveau plan"
 
 #. module: real_estate_property
 #: model_terms:ir.actions.act_window,help:real_estate_property.action_stage
@@ -223,14 +274,18 @@ msgstr "Chambres à coucher"
 #. module: real_estate_property
 #. odoo-python
 #: code:addons/real_estate_property/models/real_estate_property_stage.py:0
+msgid "Blocked"
+msgstr "Bloqué"
+
+#. module: real_estate_property
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage1
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage2
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage3
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage4
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage5
 #: model:real_estate.stage,legend_blocked:real_estate_property.stage6
-msgid "Blocked"
-msgstr "Bloqué"
+msgid "Bloqué"
+msgstr ""
 
 #. module: real_estate_property
 #: model:real_estate.subtype,name:real_estate_property.subcategory_other_boat_cruise
@@ -468,6 +523,11 @@ msgid "Covered parking space"
 msgstr "Espace de stationnement couvert"
 
 #. module: real_estate_property
+#: model_terms:ir.actions.act_window,help:real_estate_property.action_activity_types
+msgid "Create an Activity Type"
+msgstr ""
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_extra_tag__create_uid
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__create_uid
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_room__create_uid
@@ -558,6 +618,16 @@ msgstr "Ascenseur"
 #. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__owner_email
 msgid "Email"
+msgstr ""
+
+#. module: real_estate_property
+#: model:real_estate.stage,legend_normal:real_estate_property.stage1
+#: model:real_estate.stage,legend_normal:real_estate_property.stage2
+#: model:real_estate.stage,legend_normal:real_estate_property.stage3
+#: model:real_estate.stage,legend_normal:real_estate_property.stage4
+#: model:real_estate.stage,legend_normal:real_estate_property.stage5
+#: model:real_estate.stage,legend_normal:real_estate_property.stage6
+msgid "En-cours"
 msgstr ""
 
 #. module: real_estate_property
@@ -852,12 +922,6 @@ msgstr "Immédiatement"
 #. module: real_estate_property
 #. odoo-python
 #: code:addons/real_estate_property/models/real_estate_property_stage.py:0
-#: model:real_estate.stage,legend_normal:real_estate_property.stage1
-#: model:real_estate.stage,legend_normal:real_estate_property.stage2
-#: model:real_estate.stage,legend_normal:real_estate_property.stage3
-#: model:real_estate.stage,legend_normal:real_estate_property.stage4
-#: model:real_estate.stage,legend_normal:real_estate_property.stage5
-#: model:real_estate.stage,legend_normal:real_estate_property.stage6
 msgid "In Progress"
 msgstr "En-cours"
 
@@ -977,6 +1041,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__laundry_room
 msgid "Laundry room"
 msgstr "Buanderie"
+
+#. module: real_estate_property
+#: model:ir.actions.act_window,name:real_estate_property.action_plan
+msgid "Lead Plans"
+msgstr ""
 
 #. module: real_estate_property
 #: model_terms:ir.ui.view,arch_db:real_estate_property.real_estate_property_view_form
@@ -1406,6 +1475,11 @@ msgid "Ready for Next Stage"
 msgstr ""
 
 #. module: real_estate_property
+#: model:ir.ui.menu,name:real_estate_property.menu_config_realestate
+msgid "Real Estate"
+msgstr ""
+
+#. module: real_estate_property
 #: model:ir.model.fields,field_description:real_estate_property.field_real_estate_property__user_id
 msgid "Real Estate Agent"
 msgstr "Agent immobilier"
@@ -1574,7 +1648,7 @@ msgstr "Appartement de service"
 #: model:ir.actions.act_window,name:real_estate_property.property_config_settings_action
 #: model:ir.ui.menu,name:real_estate_property.property_menu_configuration
 msgid "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 #. module: real_estate_property
 #: model:ir.model.fields.selection,name:real_estate_property.selection__real_estate_room__name__shower_room
@@ -1765,6 +1839,13 @@ msgstr "Troisième étage"
 msgid ""
 "This stage is folded in the kanban view when there are no records in that "
 "stage to display."
+msgstr ""
+
+#. module: real_estate_property
+#: model_terms:ir.actions.act_window,help:real_estate_property.action_activity_types
+msgid ""
+"Those represent the different categories of things you have to do (e.g. "
+"\"Call\" or \"Prepare meeting\")."
 msgstr ""
 
 #. module: real_estate_property

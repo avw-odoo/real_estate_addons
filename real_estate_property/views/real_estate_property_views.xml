@@ -427,7 +427,7 @@
     <field name="name">Activity Types</field>
     <field name="res_model">mail.activity.type</field>
     <field name="view_mode">tree,form</field>
-    <field name="domain">['|', ('res_model', '=', False), ('res_model', 'in', ['real_estate.property', 'res.partner'])]</field>
+    <field name="domain">['|', ('res_model', '=', False), ('res_model', '=', 'real_estate.property')]</field>
     <field name="context">{'default_res_model': 'real_estate.property'}</field>
     <field name="help" type="html">
         <p class="o_view_nocontent_smiling_face">
@@ -438,16 +438,33 @@
     </field>
 </record>
 
+<record id="real_estate_property.action_plan" model="ir.actions.act_window">
+    <field name="name">Lead Plans</field>
+    <field name="res_model">mail.activity.plan</field>
+    <field name="view_mode">tree,form</field>
+    <field name="search_view_id" ref="mail.mail_activity_plan_view_search"/>
+    <field name="context">{'default_res_model': 'real_estate.property'}</field>
+    <field name="domain">[('res_model', '=', 'real_estate.property')]</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            Add a new plan
+        </p>
+    </field>
+</record>
+
 <!-- MENUS -->
 <menuitem id="real_estate_property.menu_root" web_icon="real_estate_property,static/description/icon.png" sequence="10" name="Properties">
     <menuitem id="real_estate_property.menu_1" action="real_estate_property.action_properties"/>
     <menuitem id="real_estate_property.menu_config" name="Configuration">
         <menuitem id="property_menu_configuration" name="Settings" action="property_config_settings_action" sequence="0"/>
-        <menuitem id="real_estate_property.menu_config_cat" name="Types" action="real_estate_property.action_categories" sequence="10"/>
-        <menuitem id="real_estate_property.menu_config_subcat" name="Subtypes" action="real_estate_property.action_subcategories" sequence="11"/>
-        <menuitem id="real_estate_property.menu_config_extra_tags" name="Extra Information" action="real_estate_property.action_tags" sequence="12"/>
-        <menuitem id="real_estate_property.menu_stage" name="Stages" action="real_estate_property.action_stage" sequence="13"/>
-        <menuitem id="real_estate_property.menu_activity_types" name="Activity Types" action="real_estate_property.action_activity_types" sequence="14"/>
+        <menuitem id="real_estate_property.menu_activity_types" name="Activity Types" action="real_estate_property.action_activity_types" sequence="1"/>
+        <menuitem id="real_estate_property.menu_activity_plan" name="Activity Plans" action="real_estate_property.action_plan" sequence="2"/>
+        <menuitem id="real_estate_property.menu_config_realestate" name="Real Estate" sequence="10">
+            <menuitem id="real_estate_property.menu_config_cat" name="Types" action="real_estate_property.action_categories" sequence="11"/>
+            <menuitem id="real_estate_property.menu_config_subcat" name="Subtypes" action="real_estate_property.action_subcategories" sequence="12"/>
+            <menuitem id="real_estate_property.menu_config_extra_tags" name="Extra Information" action="real_estate_property.action_tags" sequence="13"/>
+            <menuitem id="real_estate_property.menu_stage" name="Stages" action="real_estate_property.action_stage" sequence="14"/>
+        </menuitem>
     </menuitem>
 </menuitem>
 
