@@ -7,7 +7,7 @@ These Odoo modules (`real_estate_property`, `real_estate_property_crm`, `real_es
 - **Property Management**: Complete tracking of real estate properties, including details, images, and more.
 - **CRM Integration**: Link CRM leads to specific properties.
 - **Website Module**: Showcase your properties on a dedicated website.
-- **Real Estate Stage Management**: Manage and track different stages of your properties.
+- **Real Estate Stage Management**: Manage and track the various stages of your property sales process.
 - **Flexible Configuration**: Customize settings according to your business needs.
 
 ## Upcoming Features and Improvements
