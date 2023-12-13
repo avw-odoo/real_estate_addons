@@ -110,7 +110,7 @@
             </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="action_view_documents" type="object" class="oe_stat_button" icon="fa-folder-open-o">
+                        <button name="real_estate_property_action_documents" type="object" class="oe_stat_button" icon="fa-folder-open-o">
                             <field name="document_count" string="Documents" widget="statinfo"/>
                         </button>
                     </div>
@@ -448,6 +448,19 @@
     <field name="help" type="html">
         <p class="o_view_nocontent_smiling_face">
             Add a new plan
+        </p>
+    </field>
+</record>
+
+<record id="real_estate_property_action_documents" model="ir.actions.act_window">
+    <field name="name">Documents</field>
+    <field name="res_model">documents.document</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="domain">[('res_model', '=', 'real_estate.property'), ('res_id', '=', active_id)]</field>
+    <field name="context">{'default_res_model': 'real_estate.property', 'default_res_id': active_id, 'limit_folders_to_property': True}</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            Upload <span class="fw-normal">a file or </span>drag <span class="fw-normal">it here.</span>
         </p>
     </field>
 </record>

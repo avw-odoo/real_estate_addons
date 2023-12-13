@@ -2,8 +2,11 @@
 # Copyright (C) 2023 Alain van de Werve (avw82@icloud.com)
 
 
+import ast
 import datetime
-from odoo import models, fields, api
+from odoo import models, fields, api, _
+from odoo.osv import expression
+
 
 class RealEstateProperty(models.Model):
     _name = 'real_estate.property'
@@ -39,6 +42,9 @@ class RealEstateProperty(models.Model):
     
     # Link with Documents app
     document_ids = fields.One2many('documents.document', 'property_id', string='Documents')
+    documents_folder_id = fields.Many2one('documents.folder', string="Workspace", domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]", copy=False,
+        help="Workspace in which all of the documents of this Real Estate property will be categorized.")
+    documents_tag_ids = fields.Many2many('documents.tag', 'property_documents_tag_rel', string="Default Tags", domain="[('folder_id', 'parent_of', documents_folder_id)]", copy=True)
     document_count = fields.Integer(compute='_compute_document_count')
 
     # needed for the Kanban view
@@ -245,24 +251,15 @@ class RealEstateProperty(models.Model):
         company = self.env.company
         return company.urban_planning_template
     
-    def action_view_documents(self):
-        """Create an action to view related documents for the property.
-        This is typically used in a button click in the form view.
+    def real_estate_property_action_documents(self):
+            self.ensure_one()
+            action = self.env['ir.actions.act_window']._for_xml_id('real_estate_property.real_estate_property_action_documents')
+            action['context'] = {
+                **ast.literal_eval(action['context'].replace('active_id', str(self.id))),
+                'default_tag_ids': self.documents_tag_ids.ids,
+            }
+            return action
 
-        Returns:
-            dict: Action dictionary to open the document list view.
-        """
-        self.ensure_one()
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Documents 2',
-            'res_model': 'documents.document',
-            'view_mode': 'kanban,tree,form',
-            'context': {
-                'default_property_id': self.id,
-                'search_default_property_id': self.id,
-                'default_res_model': 'real_estate.property', 'default_res_id': self.id,}
-        }
 
     def _compute_document_count(self):
         """Compute the number of documents related to this property.
@@ -286,6 +283,30 @@ class RealEstateProperty(models.Model):
             vals["kanban_state"] = "normal"
         return super(RealEstateProperty, self).write(vals)
     
+    def _create_missing_folders(self):
+        folders_to_create_vals = []
+        property_with_folder_to_create = []
+        documents_property_folder_id = self.env.ref('real_estate_property.documents_realestate_folder').id
+
+        for property in self:
+            if not property.documents_folder_id:
+                folder_vals = {
+                    'name': property.name,
+                    'parent_folder_id': documents_property_folder_id,
+                    'company_id': property.company_id.id,
+                }
+                folders_to_create_vals.append(folder_vals)
+                property_with_folder_to_create.append(property)
+
+        created_folders = self.env['documents.folder'].sudo().create(folders_to_create_vals)
+        for property, folder in zip(property_with_folder_to_create, created_folders):
+            property.documents_folder_id = folder
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        projects = super().create(vals_list)
+        projects._create_missing_folders()
+        return projects
 
 
 class RealEstateType(models.Model):

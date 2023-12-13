@@ -2,6 +2,7 @@
 # Copyright (C) 2023 Alain van de Werve (avw82@icloud.com)
 
 
+from collections import OrderedDict
 from odoo import _, models, fields, api
 from odoo.exceptions import ValidationError
 from odoo.tools.sql import SQL
@@ -21,10 +22,47 @@ class Document(models.Model):
 
         """
         for record in self:
-            # Sets property_id only if the related model is 'real_estate.property'
             record.property_id = record.res_model == 'real_estate.property' and self.env['real_estate.property'].browse(record.res_id)
     
+    @api.model
+    def search_panel_select_range(self, field_name, **kwargs):
+        if field_name != 'folder_id' or not self._context.get('limit_folders_to_property'):
+            return super().search_panel_select_range(field_name, **kwargs)
 
+        res_model = self._context.get('active_model')
+        if res_model != 'real_estate.property':
+            return super().search_panel_select_range(field_name, **kwargs)
+
+        res_id = self._context.get('active_id')
+        fields = ['display_name', 'description', 'parent_folder_id', 'has_write_access']
+
+        active_record = self.env[res_model].browse(res_id)
+        if not active_record.exists():
+            return super().search_panel_select_range(field_name, **kwargs)
+        property = active_record if res_model == 'real_estate.property' else active_record.sudo().property_id
+
+        document_read_group = self.env['documents.document']._read_group(kwargs.get('search_domain', []), [], ['folder_id:array_agg'])
+        folder_ids = document_read_group[0][0]
+        records = self.env['documents.folder'].with_context(hierarchical_naming=False).search_read([
+            '|',
+                ('id', 'child_of', property.documents_folder_id.id),
+                ('id', 'in', folder_ids),
+        ], fields)
+        available_folder_ids = set(record['id'] for record in records)
+
+        values_range = OrderedDict()
+        for record in records:
+            record_id = record['id']
+            if record['parent_folder_id'] and record['parent_folder_id'][0] not in available_folder_ids:
+                record['parent_folder_id'] = False
+            value = record['parent_folder_id']
+            record['parent_folder_id'] = value and value[0]
+            values_range[record_id] = record
+
+        return {
+            'parent_field': 'parent_folder_id',
+            'values': list(values_range.values()),
+        }
 
     @api.model
     def _search_property_id(self, operator, value):

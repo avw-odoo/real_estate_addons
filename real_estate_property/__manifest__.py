@@ -28,6 +28,9 @@
         'data/categories.xml',
         'data/tags.xml',
         'data/stages.xml',
+        'data/documents_folder_data.xml',
+        'data/documents_facet_data.xml',
+        'data/documents_tag_data.xml',
     ],
     'demo': [
         'demo/demo.xml',
