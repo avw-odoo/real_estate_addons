@@ -305,9 +305,9 @@ class RealEstateProperty(models.Model):
 
     @api.model_create_multi
     def create(self, vals_list):
-        projects = super().create(vals_list)
-        projects._create_missing_folders()
-        return projects
+        properties = super().create(vals_list)
+        properties._create_missing_folders()
+        return properties
 
 
 class RealEstateType(models.Model):
