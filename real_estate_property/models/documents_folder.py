@@ -15,11 +15,16 @@ class DocumentFolder(models.Model):
             res['parent_folder_id'] = self.env.ref('real_estate_property.documents_realestate_folder').id
         return res
 
-    property_ids = fields.One2many('real_estate.property', 'documents_folder_id')
+    property_id = fields.Many2one('real_estate.property')
 
     @api.ondelete(at_uninstall=False)
     def unlink_except_project_folder(self):
         property_folder = self.env.ref('real_estate_property.documents_realestate_folder')
         if property_folder in self:
             raise UserError(_('The "%s" workspace is required by the Real Estate Property application and cannot be deleted.', property_folder.name))
-        
+    
+    def _get_property_id(self):
+        if self.property_id:
+            return self.property_id
+        return self.env['real_estate.property']
+

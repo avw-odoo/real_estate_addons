@@ -294,6 +294,7 @@ class RealEstateProperty(models.Model):
                     'name': property.name,
                     'parent_folder_id': documents_property_folder_id,
                     'company_id': property.company_id.id,
+                    'property_id': property.id,
                 }
                 folders_to_create_vals.append(folder_vals)
                 property_with_folder_to_create.append(property)
