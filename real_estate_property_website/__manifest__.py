@@ -20,5 +20,9 @@
         'views/templates.xml',
         'views/real_estate_property_website_menu.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'real_estate_property_website/static/src/**/*',
+        ],
     'installable': True,
-}
+}}

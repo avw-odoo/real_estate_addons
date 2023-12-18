@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="listing">
+        <!-- <template id="listing">
           <t t-call="website.layout">
             <t t-set="title">Properties</t>
               <div class="oe_structure"/>
@@ -24,7 +24,112 @@
               </div>
               <div class="oe_structure"/>
           </t>
-        </template>
+        </template> -->
+        <!-- <template id="listing">
+            <t t-call="website.layout">
+                <t t-set="title">Properties</t>
+                <div class="container my-5">
+                    <h1 class="text-center mb-4">Properties</h1>
+                    <div class="row">
+                        <t t-foreach="properties" t-as="object">
+                            <div class="col-md-4 mb-4 p-3">
+                                <a t-attf-href="#{root}/properties/#{object.id}">
+                                    <div class="card w-75">
+                                        <img class="card-img-top" t-att-src="object.property_image and '/web/image?model=real_estate.property&amp;id=' + str(object.id) + '&amp;field=property_image' or '/path/to/default-image.jpg'" alt="Property Image"/>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-muted" t-esc="object.subtype_id.name"/>
+                                            <h5 class="card-price">
+                                                <t t-if="object.make_offer">
+                                                    Àpd.
+                                                </t>
+                                                <t t-esc="object.price" t-options='{"widget": "float", "precision": 0}'/><t t-esc="object.company_currency_id.symbol"/>
+                                            </h5>
+                                            <small class="card-features">
+                                                <t t-if="object.bedroom">
+                                                    <div class="feature-item">
+                                                        <img src="/real_estate_property_website/static/img/bed.svg" alt="Bedrooms" class="icon-small"/>
+                                                        <span><t t-esc="object.bedroom"/> Chambres</span>
+                                                    </div>
+                                                </t>
+                                                <t t-if="object.livable_area">
+                                                    <div class="feature-item">
+                                                        <img src="/real_estate_property_website/static/img/area.svg" alt="Area" class="icon-small"/>
+                                                        <span><t t-esc="object.livable_area"/> m²</span>
+                                                    </div>
+                                                </t>
+                                                <t t-if="object.city">
+                                                    <div class="feature-item">
+                                                        <img src="/real_estate_property_website/static/img/location.svg" alt="Location" class="icon-small"/>
+                                                        <span t-esc="object.city"/>
+                                                    </div>
+                                                </t>
+                                            </small>
+
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template> -->
+        <template id="listing">
+              <t t-call="website.layout">
+                  <t t-set="title">Properties</t>
+                  <div class="container my-5">
+                      <h1 class="text-center mb-4" style="font-size: 2.5em;">Properties</h1>
+                      <div class="row">
+                          <t t-foreach="properties" t-as="object">
+                              <!-- Bootstrap's grid system -->
+                              <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+                                  <div class="card h-100">
+                                      <!-- Image -->
+                                      <img class="card-img-top" t-att-src="object.property_image and '/web/image?model=real_estate.property&amp;id=' + str(object.id) + '&amp;field=property_image' or '/path/to/default-image.jpg'" alt="Property Image"/>
+                                      <!-- Body -->
+                                      <div class="card-body">
+                                        <h6 class="card-title text-muted" t-esc="object.subtype_id.name"/>
+                                        <h5 class="card-price">
+                                            <t t-if="object.make_offer">
+                                                Àpd.
+                                            </t>
+                                            <t t-esc="object.price" t-options='{"widget": "float", "precision": 0}'/><t t-esc="object.company_currency_id.symbol"/>
+                                        </h5>
+                                        <small class="card-features">
+                                            <t t-if="object.bedroom">
+                                                <div class="feature-item">
+                                                    <img src="/real_estate_property_website/static/img/bed.svg" alt="Bedrooms" class="icon-small"/>
+                                                    <span><t t-esc="object.bedroom"/> Chambres</span>
+                                                </div>
+                                            </t>
+                                            <t t-if="object.livable_area">
+                                                <div class="feature-item">
+                                                    <img src="/real_estate_property_website/static/img/area.svg" alt="Area" class="icon-small"/>
+                                                    <span><t t-esc="object.livable_area"/> m²</span>
+                                                </div>
+                                            </t>
+                                            <t t-if="object.city">
+                                                <div class="feature-item">
+                                                    <img src="/real_estate_property_website/static/img/location.svg" alt="Location" class="icon-small"/>
+                                                    <span t-esc="object.city"/>
+                                                </div>
+                                            </t>
+                                        </small>
+
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </t>
+                      </div>
+                  </div>
+              </t>
+          </template>
+
+
+
+
 
         <template id="property" name="Property Detail">
           <t t-call="website.layout">

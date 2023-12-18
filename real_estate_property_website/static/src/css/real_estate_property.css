@@ -1,0 +1,18 @@
+.card-features {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 10px; /* Adjust the gap between items as needed */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents the icon and text from wrapping individually */
+    margin-right: 5px; /* Provides space to the right of each feature item */
+}
+
+.icon-small {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Adjust spacing between icon and text as needed */
+}
