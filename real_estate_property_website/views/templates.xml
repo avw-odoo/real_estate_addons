@@ -92,7 +92,7 @@
                                         <h6 class="card-title text-muted" t-esc="object.subtype_id.name"/>
                                         <h5 class="card-price">
                                             <t t-if="object.make_offer">
-                                                Àpd.
+                                                From
                                             </t>
                                             <t t-esc="object.price" t-options='{"widget": "float", "precision": 0}'/><t t-esc="object.company_currency_id.symbol"/>
                                         </h5>
@@ -100,7 +100,7 @@
                                             <t t-if="object.bedroom">
                                                 <div class="feature-item">
                                                     <img src="/real_estate_property_website/static/img/bed.svg" alt="Bedrooms" class="icon-small"/>
-                                                    <span><t t-esc="object.bedroom"/> Chambres</span>
+                                                    <span><t t-esc="object.bedroom"/> Bedrooms</span>
                                                 </div>
                                             </t>
                                             <t t-if="object.livable_area">

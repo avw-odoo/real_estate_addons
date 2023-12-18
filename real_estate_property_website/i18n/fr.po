@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* real_estate_property_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.1alpha1+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-18 14:10+0000\n"
+"PO-Revision-Date: 2023-12-18 14:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.property
+msgid "<strong>Address:</strong>"
+msgstr "<strong>Addresse:</strong>"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.property
+msgid "Additional Information"
+msgstr "Information supplémentaire"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "Area"
+msgstr "Surface"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "Bedrooms"
+msgstr "Chambres"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "From"
+msgstr "Àpd."
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.property
+msgid ""
+"Here you can add more information about the property, like amenities, "
+"neighborhood, etc."
+msgstr ""
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "Location"
+msgstr "Localisation"
+
+#. module: real_estate_property_website
+#: model:ir.actions.act_url,name:real_estate_property_website.action_real_estate_properties
+#: model:website.menu,name:real_estate_property_website.website_real_estate_menu
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "Properties"
+msgstr "Biens"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.property
+msgid "Property Details"
+msgstr "Détails du bien"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "Property Image"
+msgstr "Illustration du bien"
+
+#. module: real_estate_property_website
+#: model_terms:ir.ui.view,arch_db:real_estate_property_website.listing
+msgid "m²"
+msgstr "m²"

@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     white-space: nowrap; /* Prevents the icon and text from wrapping individually */
-    margin-right: 5px; /* Provides space to the right of each feature item */
+    margin-right: 10px; /* Provides space to the right of each feature item */
 }
 
 .icon-small {
