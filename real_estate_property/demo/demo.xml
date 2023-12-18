@@ -13,6 +13,8 @@
         <field name="partner_id" ref="base.res_partner_address_15"/>
         <field name="user_id" ref="base.user_admin"/>
         <field name="price">176000</field>
+        <field name="livable_area">385 </field>
+        <field name="bedroom"> 5 </field>
         <field name="expected_revenue">4400</field>
         <field name="stage_id" ref="real_estate_property.stage1"/>
         <field name="property_image" type="base64" file="real_estate_property/static/img/maison-1.jpg"/>
@@ -31,6 +33,8 @@
         <field name="partner_id" ref="base.res_partner_address_18"/>
         <field name="user_id" ref="base.user_demo"/>
         <field name="price">125000</field>
+        <field name="livable_area">185</field>
+        <field name="bedroom"> 3 </field>
         <field name="expected_revenue">3125</field>
         <field name="stage_id" ref="real_estate_property.stage2"/>
         <field name="property_image" type="base64" file="real_estate_property/static/img/maison-2.jpg"/>
@@ -49,6 +53,8 @@
           <field name="partner_id" ref="base.res_partner_address_11"/>
           <field name="user_id" ref="base.user_admin"/>
           <field name="price">850000</field>
+          <field name="livable_area">95 </field>
+        <field name="bedroom"> 2 </field>
           <field name="expected_revenue">17000</field>
           <field name="stage_id" ref="real_estate_property.stage1"/>
           <field name="property_image" type="base64" file="real_estate_property/static/img/maison-3.jpg"/>
