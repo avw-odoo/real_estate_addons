@@ -18,17 +18,33 @@ class DocumentFolder(models.Model):
 
     property_id = fields.Many2one('real_estate.property')
 
+
+    @api.model
+    def create(self, vals):
+        # If a parent folder is defined, check whether it is linked to a property
+        parent_folder_id = vals.get('parent_folder_id')
+        if parent_folder_id:
+            parent_folder = self.env['documents.folder'].browse(parent_folder_id)
+            
+            if parent_folder.property_id:
+                # Assign the same property
+                vals['property_id'] = parent_folder.property_id.id
+
+        return super(DocumentFolder, self).create(vals)
+
+
     @api.ondelete(at_uninstall=False)
     def unlink_except_property_folder(self):
         property_folder = self.env.ref('real_estate_property.documents_realestate_folder')
         if property_folder in self:
             raise UserError(_('The "%s" workspace is required by the Real Estate Property application and cannot be deleted.', property_folder.name))
     
+
     def _get_property_id(self):
         if self.property_id:
             return self.property_id
         return self.env['real_estate.property']
-    
+
 
 
 class DocumentsTag(models.Model):
