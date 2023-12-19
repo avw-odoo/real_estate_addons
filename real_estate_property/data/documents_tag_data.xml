@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record id="documents_realestate_types_1" model="documents.tag" forcecreate="0">
-            <field name="name">Administrative</field>
-            <field name="sequence">5</field>
-            <field name="facet_id" ref="documents_realestate_types"/>
-        </record>
-        <record id="documents_realestate_types_2" model="documents.tag" forcecreate="0">
-            <field name="name">Legal</field>
-            <field name="sequence">10</field>
+        <record id="documents_realestate_types_photo" model="documents.tag" forcecreate="0">
+            <field name="name">Photo</field>
+            <field name="sequence">0</field>
             <field name="facet_id" ref="documents_realestate_types"/>
         </record>
         <record id="documents_realestate_types_3" model="documents.tag" forcecreate="0">
-            <field name="name">Plans</field>
-            <field name="sequence">15</field>
+            <field name="name">Plan</field>
+            <field name="sequence">10</field>
             <field name="facet_id" ref="documents_realestate_types"/>
         </record>
         <record id="documents_realestate_types_4" model="documents.tag" forcecreate="0">
             <field name="name">Technical</field>
             <field name="sequence">20</field>
-            <field name="facet_id" ref="documents_realestate_types"/>
-        </record>
-        <record id="documents_realestate_types_photo" model="documents.tag" forcecreate="0">
-            <field name="name">Photo</field>
-            <field name="sequence">25</field>
             <field name="facet_id" ref="documents_realestate_types"/>
         </record>
         <record id="documents_realestate_types_6" model="documents.tag" forcecreate="0">
@@ -37,7 +27,7 @@
             <field name="facet_id" ref="documents_realestate_distribution"/>
         </record>
         <record id="documents_realestate_distribution_owner" model="documents.tag" forcecreate="0">
-            <field name="name">Property Owner</field>
+            <field name="name">Owner-seller</field>
             <field name="sequence">20</field>
             <field name="facet_id" ref="documents_realestate_distribution"/>
         </record>
