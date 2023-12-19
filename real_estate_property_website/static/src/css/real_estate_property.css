@@ -1,3 +1,15 @@
+.card-price {
+    margin-bottom: 18px;
+}
+
+.card-grouped {
+    margin-bottom: 1px;
+}
+
+.feature-grouped {
+    margin-bottom: -5px;
+}
+
 .card-features {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap onto the next line */
