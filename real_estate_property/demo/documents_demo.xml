@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="folder_demo_property_maison_1" model="documents.folder" forcecreate="0">
+                <field name="name">Sombreffe</field>
+                <field name="property_id" ref="real_estate_property.demo_property_1"/>
+        </record>
+        <record id="documents_image_maison-1" model="documents.document" forcecreate="0">
+            <field name="name">maison-1.jpg</field>
+            <field name="datas" type="base64" file="real_estate_property/static/img/maison-1.jpg"/>
+            <field name="folder_id" ref="real_estate_property.folder_demo_property_maison_1"/>
+            <field name="res_model">real_estate.property</field>
+            <field name="res_id" ref="real_estate_property.demo_property_1"/>
+            <field name="tag_ids" eval="[(6,0,[ref('real_estate_property.documents_realestate_types_top_photo'),
+                                               ref('real_estate_property.documents_realestate_types_photo')])]"/>
+        </record>
+        <record id="folder_demo_property_maison_2" model="documents.folder" forcecreate="0">
+                <field name="name">Gesves</field>
+                <field name="property_id" ref="real_estate_property.demo_property_2"/>
+        </record>
+        <record id="documents_image_maison-2" model="documents.document" forcecreate="0">
+            <field name="name">maison-2.jpg</field>
+            <field name="datas" type="base64" file="real_estate_property/static/img/maison-2.jpg"/>
+            <field name="folder_id" ref="real_estate_property.folder_demo_property_maison_2"/>
+            <field name="res_model">real_estate.property</field>
+            <field name="res_id" ref="real_estate_property.demo_property_2"/>
+            <field name="tag_ids" eval="[(6,0,[ref('real_estate_property.documents_realestate_types_top_photo'),
+                                               ref('real_estate_property.documents_realestate_types_photo')])]"/>
+        </record>
+        <record id="folder_demo_property_maison_3" model="documents.folder" forcecreate="0">
+                <field name="name">Lyon</field>
+                <field name="property_id" ref="real_estate_property.demo_property_3"/>
+        </record>
+        <record id="documents_image_maison-3" model="documents.document" forcecreate="0">
+            <field name="name">maison-3.jpg</field>
+            <field name="datas" type="base64" file="real_estate_property/static/img/maison-3.jpg"/>
+            <field name="folder_id" ref="real_estate_property.folder_demo_property_maison_3"/>
+            <field name="res_model">real_estate.property</field>
+            <field name="res_id" ref="real_estate_property.demo_property_3"/>
+            <field name="tag_ids" eval="[(6,0,[ref('real_estate_property.documents_realestate_types_top_photo'),
+                                               ref('real_estate_property.documents_realestate_types_photo')])]"/>
+        </record>
+        <record id="folder_demo_property_maison_4" model="documents.folder" forcecreate="0">
+                <field name="name">Bruxelles</field>
+                <field name="property_id" ref="real_estate_property.demo_property_4"/>
+        </record>
+        <record id="documents_image_maison-4" model="documents.document" forcecreate="0">
+            <field name="name">maison-4.jpg</field>
+            <field name="datas" type="base64" file="real_estate_property/static/img/maison-4.jpg"/>
+            <field name="folder_id" ref="real_estate_property.folder_demo_property_maison_4"/>
+            <field name="res_model">real_estate.property</field>
+            <field name="res_id" ref="real_estate_property.demo_property_4"/>
+            <field name="tag_ids" eval="[(6,0,[ref('real_estate_property.documents_realestate_types_top_photo'),
+                                               ref('real_estate_property.documents_realestate_types_photo')])]"/>
+        </record>
+        <record id="folder_demo_property_maison_5" model="documents.folder" forcecreate="0">
+                <field name="name">Bruxelles</field>
+                <field name="property_id" ref="real_estate_property.demo_property_5"/>
+        </record>
+        <record id="documents_image_maison-5" model="documents.document" forcecreate="0">
+            <field name="name">maison-5.jpg</field>
+            <field name="datas" type="base64" file="real_estate_property/static/img/maison-5.jpg"/>
+            <field name="folder_id" ref="real_estate_property.folder_demo_property_maison_5"/>
+            <field name="res_model">real_estate.property</field>
+            <field name="res_id" ref="real_estate_property.demo_property_5"/>
+            <field name="tag_ids" eval="[(6,0,[ref('real_estate_property.documents_realestate_types_top_photo'),
+                                               ref('real_estate_property.documents_realestate_types_photo')])]"/>
+        </record>
+    </data>
+</odoo>

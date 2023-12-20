@@ -19,6 +19,20 @@ class DocumentFolder(models.Model):
     property_id = fields.Many2one('real_estate.property')
 
 
+    @api.ondelete(at_uninstall=False)
+    def unlink_except_property_folder(self):
+        property_folder = self.env.ref('real_estate_property.documents_realestate_folder')
+        if property_folder in self:
+            raise UserError(_('"%s" workspace is required by the Real Estate Property application and cannot be deleted.', property_folder.name))
+
+
+    @api.ondelete(at_uninstall=False)
+    def _unlink_except_property_folder(self):
+        for folder in self:
+            if folder.property_id:
+                raise UserError(_('"%s" workspace cannot be deleted as it is linked to a property.', folder.name))
+
+
     @api.model
     def create(self, vals):
         # If a parent folder is defined, check whether it is linked to a property
@@ -32,14 +46,7 @@ class DocumentFolder(models.Model):
 
         return super(DocumentFolder, self).create(vals)
 
-
-    @api.ondelete(at_uninstall=False)
-    def unlink_except_property_folder(self):
-        property_folder = self.env.ref('real_estate_property.documents_realestate_folder')
-        if property_folder in self:
-            raise UserError(_('The "%s" workspace is required by the Real Estate Property application and cannot be deleted.', property_folder.name))
     
-
     def _get_property_id(self):
         if self.property_id:
             return self.property_id
@@ -57,6 +64,7 @@ class DocumentsTag(models.Model):
             self.env.ref('real_estate_property.documents_realestate_distribution_website').id,
             self.env.ref('real_estate_property.documents_realestate_distribution_notary').id,
             self.env.ref('real_estate_property.documents_realestate_types_photo').id,
+            self.env.ref('real_estate_property.documents_realestate_types_top_photo').id,
         ]
         for record in self:
             if record.id in protected_tags_ids:

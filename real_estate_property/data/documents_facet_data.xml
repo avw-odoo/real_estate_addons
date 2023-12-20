@@ -9,7 +9,7 @@
         </record>
 
         <record id="documents_realestate_types" model="documents.facet" forcecreate="0">
-            <field name="name">Doc Type</field>
+            <field name="name">Type</field>
             <field name="sequence">2</field>
             <field name="folder_id" ref="documents_realestate_folder"/>
         </record>

@@ -4,43 +4,44 @@
         <!-- TEMPLATE Search properties kanban like page -->
         <template id="property_website_kanban_template" name="Property Kanban Website">
             <t t-call="website.layout">
-            <t t-set="title">Properties</t>
+                <t t-set="title">Properties</t>
                 <div class="container my-3">
                     <div class="d-flex d-print-none align-items-center justify-content-end flex-wrap gap-2 w-100">
-                    <h2 class="my-0 me-auto pe-sm-4">Our properties</h2>
+                        <h2 class="my-0 me-auto pe-sm-4">Our properties</h2>
                         <div class="row">
-                            <t t-foreach="properties" t-as="property">
+                            <t t-foreach="properties_with_images" t-as="prop_tuple">
                                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
-                                    <a t-attf-href="#{root}/properties/#{property.id}" style="text-decoration: none; color: inherit;">
+                                    <a t-attf-href="#{root}/properties/#{prop_tuple[0].id}" style="text-decoration: none; color: inherit;">
                                         <div class="card h-100">
-                                            <img class="card-img-top" t-att-src="property.property_image and '/web/image?model=real_estate.property&amp;id=' + str(property.id) + '&amp;field=property_image' or '/path/to/default-image.jpg'" alt="Property Image"/>
+                                            <!-- Use the image from the tuple if available, otherwise use a default image -->
+                                            <img class="card-img-top" t-att-src="prop_tuple[1] and '/web/image/documents.document/' + str(prop_tuple[1].id) + '/datas' or '/path/to/default-image.jpg'" alt="Property Image"/>
                                             <div class="card-body">
                                                 <div class="card-price">
-                                                    <h6 class="text-muted card-grouped" t-esc="property.subtype_id.name"/>
+                                                    <h6 class="text-muted card-grouped" t-esc="prop_tuple[0].subtype_id.name"/>
                                                     <h5>
-                                                        <t t-if="property.make_offer">
+                                                        <t t-if="prop_tuple[0].make_offer">
                                                             From
                                                         </t>
-                                                        <t t-esc="property.price" t-options='{"widget": "float", "precision": 0}'/><t t-esc="property.company_currency_id.symbol"/>
+                                                        <t t-esc="prop_tuple[0].price" t-options='{"widget": "float", "precision": 0}'/><t t-esc="prop_tuple[0].company_currency_id.symbol"/>
                                                     </h5>
                                                 </div>
                                                 <small class="card-features">
-                                                    <t t-if="property.bedroom">
+                                                    <t t-if="prop_tuple[0].bedroom">
                                                         <div class="feature-item feature-grouped">
                                                             <img src="/real_estate_property_website/static/img/bed.svg" alt="Bedrooms" class="icon-small"/>
-                                                            <span><t t-esc="property.bedroom"/> Bedrooms</span>
+                                                            <span><t t-esc="prop_tuple[0].bedroom"/> Bedrooms</span>
                                                         </div>
                                                     </t>
-                                                    <t t-if="property.livable_area">
+                                                    <t t-if="prop_tuple[0].livable_area">
                                                         <div class="feature-item feature-grouped">
                                                             <img src="/real_estate_property_website/static/img/area.svg" alt="Area" class="icon-small"/>
-                                                            <span><t t-esc="property.livable_area"/> m²</span>
+                                                            <span><t t-esc="prop_tuple[0].livable_area"/> m²</span>
                                                         </div>
                                                     </t>
-                                                    <t t-if="property.city">
+                                                    <t t-if="prop_tuple[0].city">
                                                         <div class="mr-10 feature-item feature-grouped">
                                                             <img src="/real_estate_property_website/static/img/location.svg" alt="Location" class="icon-small"/>
-                                                            <span> <t t-esc="property.zip"/> <t t-esc="property.city" /></span>
+                                                            <span> <t t-esc="prop_tuple[0].zip"/> <t t-esc="prop_tuple[0].city" /></span>
                                                         </div>
                                                     </t>
                                                 </small>
@@ -71,14 +72,14 @@
                         <div class="row gx-2">
                             <t t-if="main_image">
                             <div class="col-lg-6">
-                                <img class="img-fluid rounded-2 w-100 mb-2" t-att-src="'/web/image/documents.document/' + str(main_image[0].id) + '/datas'" alt="Main Property Image"/>
+                                <img class="img-max-h600 rounded-2 w-100 mb-2" t-att-src="'/web/image/documents.document/' + str(main_image[0].id) + '/datas'" alt="Main Property Image"/>
                             </div>
                             </t>
                             <div class="col-lg-6">
                                 <div class="row gx-2">
                                     <t t-foreach="thumbnails" t-as="thumbnail">
                                         <div class="col-sm-6 mb-2">
-                                            <img class="img-fluid rounded-2 w-100" t-att-src="'/web/image/documents.document/' + str(thumbnail.id) + '/datas'" alt="Property Thumbnail"/>
+                                            <img class="img-max-h280 rounded-2 w-100" t-att-src="'/web/image/documents.document/' + str(thumbnail.id) + '/datas'" alt="Property Thumbnail"/>
                                         </div>
                                     </t>
                                 </div>
@@ -91,6 +92,18 @@
                 </div>
             </t>
         </template>
+
+        <!-- TEMPLATE if the main image is not found -->
+        <template id="error_template" name="Error Page">
+            <t t-call="website.layout">
+                <div class="container mt16 mb16">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Error:</strong> <t t-esc="error_message"/>
+                    </div>
+                </div>
+            </t>
+        </template>
+
 
     </data>
 </odoo>

@@ -38,7 +38,7 @@ class RealEstateProperty(models.Model):
     # TAB General information
     # =========================================================
     name = fields.Char("Property Name", required=True)
-    property_image = fields.Image("Illustration", max_height=300)
+    property_image = fields.Image("Property Top Photo", compute='_compute_property_image')
     
     # Link with Documents app
     document_ids = fields.One2many('documents.document', 'property_id', string='Documents')
@@ -272,12 +272,6 @@ class RealEstateProperty(models.Model):
     @api.model
     def write(self, vals):
         """Override the standard write method to reset the Kanban state when the stage changes.
-
-        Args:
-            vals (dict): Dictionary of values to write.
-
-        Returns:
-            bool: True if the write operation is successful.
         """
         if "stage_id" in vals and "kanban_state" not in vals:
             vals["kanban_state"] = "normal"
@@ -308,6 +302,21 @@ class RealEstateProperty(models.Model):
         properties = super().create(vals_list)
         properties._create_missing_folders()
         return properties
+    
+
+    @api.depends('document_ids')
+    def _compute_property_image(self):
+        top_photo_tag = self.env.ref('real_estate_property.documents_realestate_types_top_photo')
+        for record in self:
+            top_photo_documents = record.document_ids.filtered(lambda d: top_photo_tag in d.tag_ids)
+
+            top_photo_document = next((doc for doc in top_photo_documents if doc.datas), None)
+
+            if top_photo_document:
+                record.property_image = top_photo_document.datas
+            else:
+                record.property_image = False
+
 
 
 class RealEstateType(models.Model):

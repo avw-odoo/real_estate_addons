@@ -1,3 +1,24 @@
+$property-image-size: 150px !default;
+
+
 .real-estate-property-template .note-editable {
     border: none;
+}
+
+.property_avatar {
+    float: right;
+    margin-bottom: 5px;
+
+    .img {
+        max-width: $property-image-size;
+        max-height: $property-image-size;
+        vertical-align: top;
+        border: 1px solid $o-gray-200;
+    }
+
+    @include media-breakpoint-down(sm) {
+        + .oe_title {
+            max-width: calc(100% - #{$property-image-size} - #{map-get($spacers, 2)});
+        }
+    }
 }
