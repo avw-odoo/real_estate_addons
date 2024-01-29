@@ -19,6 +19,7 @@
     'data': [
         'views/templates.xml',
         'views/real_estate_property_website_menu.xml',
+        'views/real_estate_property_views.xml'
     ],
     'assets': {
         'web.assets_frontend': [
